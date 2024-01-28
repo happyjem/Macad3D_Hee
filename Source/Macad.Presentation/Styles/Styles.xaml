@@ -1,0 +1,2601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mmp="clr-namespace:Macad.Presentation" xmlns:dock="clr-namespace:AvalonDock.Themes.VS2013.Themes;assembly=AvalonDock.Themes.VS2013" xmlns:dockControls="clr-namespace:AvalonDock.Controls;assembly=AvalonDock" xmlns:Fluent="urn:fluent-ribbon" xmlns:treeview="clr-namespace:Macad.Presentation.TreeView">
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="pack://application:,,,/Fluent;Component/Themes/Generic.xaml" />
+    <ResourceDictionary Source="pack://application:,,,/AvalonDock.Themes.VS2013;component/LightBrushs.xaml" />
+    <ResourceDictionary Source="pack://application:,,,/AvalonDock.Themes.VS2013;component/Themes/Generic.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+  <!--region Styles\Colors.xaml-->
+  <Color x:Key="Macad.Colors.White">#FFFFFFFF</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.White" Color="#FFFFFFFF" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Black">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Black" Color="#FF000000" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base10">#FFF0F0F0</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base10" Color="#FFF0F0F0" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base15">#FFE4E4E4</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base15" Color="#FFE4E4E4" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base20">#FFD8D8D8</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base20" Color="#FFD8D8D8" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base25">#FFCBCBCB</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base25" Color="#FFCBCBCB" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base30">#FFC0C0C0</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base30" Color="#FFC0C0C0" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base35">#FFB4B4B4</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base35" Color="#FFB4B4B4" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base40">#FFA8A8A8</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base40" Color="#FFA8A8A8" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base50">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base50" Color="#FF909090" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base60">#FF787878</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base60" Color="#FF787878" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base70">#FF606060</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base70" Color="#FF606060" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base80">#FF484848</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base80" Color="#FF484848" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base90">#FF303030</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base90" Color="#FF303030" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Base100">#FF242424</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Base100" Color="#FF242424" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Accent">#FFFECA34</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Accent" Color="#FFFECA34" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.AccentDark">#FFC2821B</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.AccentDark" Color="#FFC2821B" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.AccentLight">#FFFEDE70</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.AccentLight" Color="#FFFEDE70" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Complementary">#285eff</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Complementary" Color="#285eff" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Error">#ffb22222</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Error" Color="#ffb22222" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.ErrorLight">#ffe28888</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ErrorLight" Color="#ffe28888" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Warning">#ffef6c00</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Warning" Color="#ffef6c00" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.Text">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Text" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextLight">#FF787878</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextLight" Color="#FF787878" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Window.Background">#FFA8A8A8</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Window.Background" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Window.Border">#FF484848</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Window.Border" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.StatusBar.Background">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.StatusBar.Background" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.MessageBar.Background">LemonChiffon</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.MessageBar.Background" options:Freeze="True">LemonChiffon</SolidColorBrush>
+  <Color x:Key="Macad.Colors.Pane.Background">#FFA8A8A8</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Pane.Background" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Pane.Border">#FF484848</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Pane.Border" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Panel.Background">#FFC0C0C0</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Panel.Background" Color="#FFC0C0C0" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Panel.Border">#FF787878</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Panel.Border" Color="#FF787878" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Panel.Header.Background">#FFCBCBCB</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Panel.Header.Background" Color="#FFCBCBCB" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Panel.Header.Border">#FF787878</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Panel.Header.Border" Color="#FF787878" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Popup.Border">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Popup.Border" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Popup.Background">#FFF0F0F0</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Popup.Background" Color="#FFF0F0F0" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Popup.Header.Border">#FF484848</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Popup.Header.Border" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Popup.Header.Background">#FFC0C0C0</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Popup.Header.Background" Color="#FFC0C0C0" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Popup.Header.Text">#FF484848</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Popup.Header.Text" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Text">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Text" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Border">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Border" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Background">#FFCBCBCB</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Background" Color="#FFCBCBCB" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.MouseOver.Border">#FFA8A8A8</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.MouseOver.Border" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.MouseOver.Background">#FFE4E4E4</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.MouseOver.Background" Color="#FFE4E4E4" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Pressed.Border">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Pressed.Border" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Pressed.Background">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Pressed.Background" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Checked.Border">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Checked.Border" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Checked.Background">#FFFECA34</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Checked.Background" Color="#FFFECA34" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.CheckedMouseOver.Border">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.CheckedMouseOver.Border" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.CheckedMouseOver.Background">#FFFEDE70</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.CheckedMouseOver.Background" Color="#FFFEDE70" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Disabled.Border">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Disabled.Border" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Disabled.Text">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Disabled.Text" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Link.Text">SteelBlue</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Link.Text" options:Freeze="True">SteelBlue</SolidColorBrush>
+  <Color x:Key="Macad.Colors.Button.Link.MouseOver.Text">#285eff</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Button.Link.MouseOver.Text" Color="#285eff" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.Text">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.Text" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.Border">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.Border" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.Background">#FFE4E4E4</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.Background" Color="#FFE4E4E4" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.MouseOver.Border">#FFA8A8A8</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.MouseOver.Border" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.MouseOver.Background">#FFF0F0F0</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.MouseOver.Background" Color="#FFF0F0F0" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.Focused.Border">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.Focused.Border" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.Focused.Background">#FFF0F0F0</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.Focused.Background" Color="#FFF0F0F0" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.Disabled.Background">#FFD8D8D8</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.Disabled.Background" Color="#FFD8D8D8" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.Disabled.Border">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.Disabled.Border" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.Disabled.Text">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.Disabled.Text" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.TextBox.Invalid.Background">#ffe28888</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.TextBox.Invalid.Background" Color="#ffe28888" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.Text">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.Text" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.Border">#FF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.Border" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.Background">#FFD8D8D8</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.Background" Color="#FFD8D8D8" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.MouseOver.Border">#FFA8A8A8</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.MouseOver.Border" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.MouseOver.Background">#FFF0F0F0</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.MouseOver.Background" Color="#FFF0F0F0" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.Focused.Border">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.Focused.Border" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.Focused.Background">Transparent</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.Focused.Background" options:Freeze="True">Transparent</SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.Selected.Border">#FFFECA34</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.Selected.Border" Color="#FFFECA34" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.Selected.Background">#FFFECA34</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.Selected.Background" Color="#FFFECA34" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.SelectedFocused.Border">#FFC2821B</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.SelectedFocused.Border" Color="#FFC2821B" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.SelectedFocused.Background">#FFFECA34</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.SelectedFocused.Background" Color="#FFFECA34" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.SelectedMouseOver.Border">#FFC2821B</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.SelectedMouseOver.Border" Color="#FFC2821B" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.SelectedMouseOver.Background">#FFFEDE70</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.SelectedMouseOver.Background" Color="#FFFEDE70" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.Disabled.Border">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.Disabled.Border" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ListView.Disabled.Text">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ListView.Disabled.Text" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Glyph">#FF484848</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Glyph" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Glyph.MouseOver">#FF242424</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Glyph.MouseOver" Color="#FF242424" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Glyph.Disabled">#FF909090</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Glyph.Disabled" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.ScrollBar.Foreground">#FF606060</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.ScrollBar.Foreground" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.Separator">#FF606060</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.Separator" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <Color x:Key="Macad.Colors.HudElement.Background">#7F3B424F</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.HudElement.Background" Color="#7F3B424F" options:Freeze="True" />
+  <Color x:Key="Macad.Colors.HudElement.Border">#BF000000</Color>
+  <SolidColorBrush x:Key="Macad.Brushes.HudElement.Border" Color="#BF000000" options:Freeze="True" />
+  <!--endregion-->
+  <!--region Styles\CommonControls\ScrollBar.xaml-->
+  <Style x:Key="Macad.Styles.ScrollBar.Minimal" TargetType="{x:Type ScrollBar}">
+    <Setter Property="Stylus.IsFlicksEnabled" Value="false" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.ScrollBar.Foreground}" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="MinWidth" Value="6" />
+    <Setter Property="MinHeight" Value="6" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ScrollBar}">
+          <Border x:Name="Grid" HorizontalAlignment="Stretch" Margin="-2,0,-2,0" Background="Transparent">
+            <Track x:Name="PART_Track" Orientation="Vertical" HorizontalAlignment="Center" IsDirectionReversed="true" Width="4">
+              <Track.Thumb>
+                <Thumb Background="{TemplateBinding Foreground}" Foreground="{x:Null}">
+                  <Thumb.Template>
+                    <ControlTemplate>
+                      <Rectangle Fill="{TemplateBinding Background}" />
+                    </ControlTemplate>
+                  </Thumb.Template>
+                </Thumb>
+              </Track.Thumb>
+            </Track>
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="Orientation" Value="Horizontal">
+              <Setter Property="LayoutTransform" TargetName="Grid">
+                <Setter.Value>
+                  <RotateTransform Angle="-90" />
+                </Setter.Value>
+              </Setter>
+              <Setter TargetName="PART_Track" Property="Orientation" Value="Vertical" />
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter TargetName="PART_Track" Property="Width" Value="8" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CommonControls\ScrollViewer.xaml-->
+  <Style x:Key="Macad.Styles.RepeatButton.Scroll" d:IsControlPart="True" TargetType="{x:Type RepeatButton}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="IsTabStop" Value="false" />
+    <Setter Property="Focusable" Value="false" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type RepeatButton}">
+          <Grid>
+            <Rectangle Fill="{TemplateBinding Background}" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" />
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Macad.Styles.ScrollViewer" TargetType="{x:Type ScrollViewer}" BasedOn="{x:Null}">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ScrollViewer}">
+          <Grid Background="{TemplateBinding Background}">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="Auto" MaxWidth="6" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+              <RowDefinition Height="Auto" MaxHeight="6" />
+            </Grid.RowDefinitions>
+            <!-- ScrollContentPresenter: Margin="{TemplateBinding Padding}"-->
+            <ScrollContentPresenter Grid.Column="0" Grid.Row="0" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" CanContentScroll="{TemplateBinding CanContentScroll}" />
+            <ScrollBar Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" Grid.Column="0" Grid.Row="1" x:Name="PART_HorizontalScrollBar" Orientation="Horizontal" Height="6" Value="{Binding Path=HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}" Minimum="0" Maximum="{TemplateBinding ScrollableWidth}" AutomationProperties.AutomationId="HorizontalScrollBar" Style="{StaticResource Macad.Styles.ScrollBar.Minimal}" />
+            <ScrollBar Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Grid.Column="1" Grid.Row="0" x:Name="PART_VerticalScrollBar" Orientation="Vertical" Width="6" Value="{Binding Path=VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Minimum="0" Maximum="{TemplateBinding ScrollableHeight}" AutomationProperties.AutomationId="VerticalScrollBar" Style="{StaticResource Macad.Styles.ScrollBar.Minimal}" />
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style TargetType="{x:Type ScrollViewer}" BasedOn="{StaticResource Macad.Styles.ScrollViewer}" />
+  <!--endregion-->
+  <!--region Styles\Geometries.xaml-->
+  <Geometry x:Key="Macad.Geometries.Delete">M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z</Geometry>
+  <Geometry x:Key="Macad.Geometries.Increment">M0,4 H8 M4,0 V8</Geometry>
+  <Geometry x:Key="Macad.Geometries.Decrement">M0,0 H8</Geometry>
+  <Geometry x:Key="Macad.Geometries.DropDownArrow">M0.5,0.5 L3,6.5 5.5,0.5</Geometry>
+  <Geometry x:Key="Macad.Geometries.Check">M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z</Geometry>
+  <Geometry x:Key="Macad.Geometries.Close">F1M8.583,8L13,12.424 12.424,13 8,8.583 3.576,13 3,12.424 7.417,8 3,3.576 3.576,3 8,7.417 12.424,3 13,3.576z</Geometry>
+  <Geometry x:Key="Macad.Geometries.MagnifyingGlass">F1M8.5,7C7.12,7 6,5.88 6,4.5 6,3.12 7.12,2 8.5,2 9.88,2 11,3.12 11,4.5 11,5.88 9.88,7 8.5,7z M8.5,0C6.02,0 4,2.02 4,4.5 4,5.23 4.19,5.9 4.49,6.5L0,11 2,13 6.49,8.51C7.1,8.81 7.77,9 8.5,9 11,9 13,7 13,4.5 13,2.02 11,0 8.5,0z</Geometry>
+  <!--endregion-->
+  <!--region Styles\ThirdPartyControls\RibbonBrushes.xaml-->
+  <SolidColorBrush x:Key="Macad.Brushes.Ribbon.Base100" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Macad.Brushes.Ribbon.Base80" Opacity="0.8" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Macad.Brushes.Ribbon.Base60" Opacity="0.6" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Macad.Brushes.Ribbon.Base40" Opacity="0.4" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Macad.Brushes.Ribbon.Base20" Opacity="0.2" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Macad.Brushes.Ribbon.Base10" Opacity="0.1" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.AccentBaseColor" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.AccentColor20" Opacity="0.2" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.AccentColor40" Opacity="0.4" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.AccentColor60" Opacity="0.6" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.AccentColor80" Opacity="0.8" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.Highlight" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.IdealForegroundColor" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.IdealForegroundDisabled" Opacity="0.4" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.RibbonTabControl.Background" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.RibbonTabControl.Content.Background" Color="#FFE4E4E4" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.RibbonTabControl.Content.Border" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.RibbonTabItem.Active.Background" Color="#FFE4E4E4" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.RibbonTabItem.Border" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.RibbonTabItem.MouseOver.Foreground" Color="#274276" options:Freeze="True" />
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.RibbonTabItem.Selected.MouseOver.Foreground" Color="#274276" options:Freeze="True" />
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.RibbonContextualTabGroup.Background.OpacityMask" Color="#20000000" options:Freeze="True" />
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.Ribbon.Background" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.MenuItem.Background" Color="#FFF0F0F0" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.GroupSeparator.Background" Color="#FFC0C0C0" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.RibbonWindow.TitleBackground" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.MouseOver.Background" Opacity="0.1" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.Pressed.Background" Opacity="0.4" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.Button.MouseOver.Background" Opacity="0.1" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.Button.MouseOver.Border" Opacity="0.4" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.Button.Pressed.Background" Opacity="0.2" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.Button.Pressed.Border" Opacity="0.6" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.ToggleButton.Checked.Border" Color="#FFC2821B" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.ToggleButton.Checked.Background" Color="#FFFECA34" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Border" Color="#FFC2821B" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Background" Color="#FFFEDE70" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.GalleryItem.Selected" Opacity="0.4" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.GalleryItem.Pressed" Opacity="0.6" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.GalleryItem.MouseOver" Opacity="0.2" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.DropDown.Background" Color="#FFF0F0F0" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.DropDown.Border" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.DropDown.Resize.Border" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.DropDown.Resize.Background" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.ScreenTip.Border" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="Fluent.Ribbon.Brushes.ScreenTip.Background" Color="#FFF0F0F0" options:Freeze="True"></SolidColorBrush>
+  <!--endregion-->
+  <!--region Styles\CommonControls\Button.xaml-->
+  <ControlTemplate x:Key="Macad.Templates.Button" TargetType="{x:Type Button}">
+    <Grid x:Name="Grid">
+      <Border x:Name="border" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="2">
+        <Border x:Name="border1" Height="Auto" BorderBrush="Transparent" BorderThickness="{TemplateBinding BorderThickness}" Background="Transparent" CornerRadius="2" TextOptions.TextFormattingMode="Display">
+          <Grid Height="Auto">
+            <ContentPresenter Margin="{TemplateBinding Padding}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+          </Grid>
+        </Border>
+      </Border>
+    </Grid>
+    <ControlTemplate.Triggers>
+      <Trigger Property="IsPressed" Value="True">
+        <Setter Property="Background" TargetName="border" Value="{StaticResource Macad.Brushes.Button.Pressed.Background}" />
+        <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Macad.Brushes.Button.Pressed.Border}" />
+      </Trigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="IsMouseOver" Value="True" />
+          <Condition Property="IsPressed" Value="False" />
+        </MultiTrigger.Conditions>
+        <Setter Property="Background" TargetName="border" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+      </MultiTrigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="IsMouseOver" Value="True" />
+          <Condition Property="IsPressed" Value="True" />
+        </MultiTrigger.Conditions>
+        <Setter Property="Background" TargetName="border" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+        <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Macad.Brushes.Button.Pressed.Border}" />
+      </MultiTrigger>
+      <Trigger Property="IsEnabled" Value="false">
+        <Setter Property="Opacity" TargetName="Grid" Value="0.5" />
+      </Trigger>
+      <Trigger Property="mmp:GroupControls.Position" Value="Left">
+        <Setter TargetName="border" Property="CornerRadius" Value="2,0,0,2" />
+        <Setter TargetName="border1" Property="CornerRadius" Value="2,0,0,2" />
+        <Setter TargetName="border" Property="BorderThickness" Value="1" />
+      </Trigger>
+      <Trigger Property="mmp:GroupControls.Position" Value="HCenter">
+        <Setter TargetName="border" Property="CornerRadius" Value="0" />
+        <Setter TargetName="border1" Property="CornerRadius" Value="0" />
+        <Setter TargetName="border" Property="BorderThickness" Value="0,1,1,1" />
+      </Trigger>
+      <Trigger Property="mmp:GroupControls.Position" Value="Right">
+        <Setter TargetName="border" Property="CornerRadius" Value="0,2,2,0" />
+        <Setter TargetName="border1" Property="CornerRadius" Value="0,2,2,0" />
+        <Setter TargetName="border" Property="BorderThickness" Value="0,1,1,1" />
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <Style TargetType="{x:Type Button}" BasedOn="{x:Null}">
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.Background}" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Button.Text}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Border}" />
+    <Setter Property="Template" Value="{StaticResource Macad.Templates.Button}" />
+    <Setter Property="Padding" Value="7,2" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="Margin" Value="0,2" />
+  </Style>
+  <Style x:Key="Macad.Styles.Button.DropDown" TargetType="{x:Type Button}" BasedOn="{x:Null}">
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.Background}" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Button.Text}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Border}" />
+    <Setter Property="Padding" Value="7,2" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Grid x:Name="Grid">
+            <Border x:Name="border" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="3">
+              <Border x:Name="border1" Height="Auto" BorderBrush="Transparent" BorderThickness="{TemplateBinding BorderThickness}" Background="Transparent" CornerRadius="3" TextOptions.TextFormattingMode="Display">
+                <Grid Height="Auto">
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="20" />
+                  </Grid.ColumnDefinitions>
+                  <ContentPresenter Margin="{TemplateBinding Padding}" />
+                  <Path Grid.Column="1" HorizontalAlignment="Center" x:Name="Arrow" VerticalAlignment="Center" Fill="{x:Null}" Data="{StaticResource Macad.Geometries.DropDownArrow}" Stroke="{StaticResource Macad.Brushes.Glyph}" Margin="5,0,5,0" Height="7" StrokeThickness="2" Stretch="Fill" />
+                </Grid>
+              </Border>
+            </Border>
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsPressed" Value="True">
+              <Setter Property="Background" TargetName="border" Value="{StaticResource Macad.Brushes.Button.Pressed.Background}" />
+              <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Macad.Brushes.Button.Pressed.Border}" />
+            </Trigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsMouseOver" Value="True" />
+                <Condition Property="IsPressed" Value="False" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Background" TargetName="border" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsMouseOver" Value="True" />
+                <Condition Property="IsPressed" Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Background" TargetName="border" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+              <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Macad.Brushes.Button.MouseOver.Border}" />
+            </MultiTrigger>
+            <Trigger Property="IsEnabled" Value="false">
+              <Setter Property="Opacity" TargetName="Grid" Value="0.5" />
+            </Trigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="Left">
+              <Setter TargetName="border" Property="CornerRadius" Value="3,0,0,3" />
+              <Setter TargetName="border1" Property="CornerRadius" Value="3,0,0,3" />
+              <Setter TargetName="border" Property="BorderThickness" Value="1" />
+            </Trigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="HCenter">
+              <Setter TargetName="border" Property="CornerRadius" Value="0" />
+              <Setter TargetName="border1" Property="CornerRadius" Value="0" />
+              <Setter TargetName="border" Property="BorderThickness" Value="0,1,1,1" />
+            </Trigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="Right">
+              <Setter TargetName="border" Property="CornerRadius" Value="0,3,3,0" />
+              <Setter TargetName="border1" Property="CornerRadius" Value="0,3,3,0" />
+              <Setter TargetName="border" Property="BorderThickness" Value="0,1,1,1" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Macad.Styles.Button.Grid" TargetType="{x:Type Button}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ButtonBase}">
+          <ContentPresenter Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Macad.Styles.Button.GridDropDown" TargetType="{x:Type Button}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ButtonBase}">
+          <Grid Height="Auto" Background="Transparent">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition />
+              <ColumnDefinition Width="20" />
+            </Grid.ColumnDefinitions>
+            <ContentPresenter Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" />
+            <Path Grid.Column="1" HorizontalAlignment="Center" x:Name="Arrow" VerticalAlignment="Center" Fill="{x:Null}" Data="{StaticResource Macad.Geometries.DropDownArrow}" Stroke="{StaticResource Macad.Brushes.Glyph}" Margin="5,0,5,0" Height="7" StrokeThickness="2" Stretch="Fill" />
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Macad.Styles.Button.Link" TargetType="Button">
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Button.Link.Text}" />
+    <Setter Property="Cursor" Value="Hand" />
+    <Setter Property="HorizontalAlignment" Value="Left" />
+    <Setter Property="Cursor" Value="Hand" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <ContentPresenter Margin="{TemplateBinding Padding}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+    <Style.Triggers>
+      <Trigger Property="IsMouseOver" Value="true">
+        <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Button.Link.MouseOver.Text}" />
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+  <Style x:Key="Macad.Styles.Button.Glyph" TargetType="{x:Type Button}">
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Glyph}" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Glyph}" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ButtonBase}">
+          <Border VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Background="Transparent">
+            <Path x:Name="Path" Margin="{TemplateBinding Padding}" SnapsToDevicePixels="True" UseLayoutRounding="True" Stroke="{TemplateBinding Foreground}" StrokeThickness="1" Fill="{TemplateBinding Background}" Opacity="0.6" Stretch="Uniform" Data="{TemplateBinding Content}" />
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+              <Setter TargetName="Path" Property="Opacity" Value="1.0" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CommonControls\ComboBox.xaml-->
+  <ControlTemplate x:Key="Macad.Templates.ToggleButton.ComboBox" TargetType="{x:Type ToggleButton}">
+    <Grid x:Name="grid">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition Width="20" />
+      </Grid.ColumnDefinitions>
+      <Rectangle x:Name="Rectangle" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="2" RadiusY="2" Fill="{StaticResource Macad.Brushes.Button.Background}" Stroke="{StaticResource Macad.Brushes.Button.Border}" />
+      <Path x:Name="Arrow" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Fill="{x:Null}" Data="{StaticResource Macad.Geometries.DropDownArrow}" Stroke="{StaticResource Macad.Brushes.Glyph}" Margin="5,0,5,0" Height="7" StrokeThickness="2" Stretch="Fill" />
+    </Grid>
+    <ControlTemplate.Triggers>
+      <Trigger Property="IsMouseOver" Value="True">
+        <Setter Property="Fill" TargetName="Rectangle" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+      </Trigger>
+      <Trigger Property="IsFocused" Value="True">
+        <Setter Property="Fill" TargetName="Rectangle" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <ControlTemplate x:Key="Macad.Templates.ToggleButton.ComboBoxGrid" TargetType="{x:Type ToggleButton}">
+    <Rectangle HorizontalAlignment="Stretch" x:Name="Rectangle" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Fill="Transparent" Stroke="{x:Null}" />
+  </ControlTemplate>
+  <ControlTemplate x:Key="Macad.Templates.TextBox.ComboBox" TargetType="{x:Type TextBox}">
+    <Border x:Name="PART_ContentHost" Focusable="False" Background="{TemplateBinding Background}" />
+  </ControlTemplate>
+  <Style d:IsControlPart="True" TargetType="{x:Type ComboBoxItem}">
+    <Setter Property="Foreground" Value="{DynamicResource Macad.Brushes.Button.Text}" />
+    <Setter Property="SnapsToDevicePixels" Value="true" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+          <Border x:Name="border" BorderThickness="1" Padding="{TemplateBinding Control.Padding}" SnapsToDevicePixels="True" CornerRadius="2" VerticalAlignment="Center" Margin="0" Background="Transparent">
+            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Margin="5,0" x:Name="contentPresenter" />
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsHighlighted" Value="true">
+              <Setter TargetName="border" Property="Background" Value="{StaticResource Macad.Brushes.Button.Checked.Background}" />
+              <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Checked.Background}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+              <Setter Property="Foreground" Value="{DynamicResource Macad.Brushes.Button.Disabled.Text}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <ControlTemplate x:Key="Macad.Templates.ComboBox" TargetType="{x:Type ComboBox}">
+    <Grid x:Name="grid">
+      <ToggleButton x:Name="ToggleButton" Grid.Column="2" Template="{StaticResource Macad.Templates.ToggleButton.ComboBox}" Focusable="false" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press" />
+      <ContentPresenter x:Name="ContentSite" HorizontalAlignment="Left" Margin="3,3,23,3" VerticalAlignment="Center" Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" IsHitTestVisible="False" />
+      <TextBox x:Name="PART_EditableTextBox" Visibility="Hidden" Template="{StaticResource Macad.Templates.TextBox.ComboBox}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="3,3,23,3" Style="{x:Null}" Focusable="True" Background="{StaticResource Macad.Brushes.TextBox.Background}" IsReadOnly="{TemplateBinding IsReadOnly}" BorderBrush="{StaticResource Macad.Brushes.TextBox.Border}" Foreground="{StaticResource Macad.Brushes.TextBox.Text}" />
+      <Popup IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" x:Name="Popup" Focusable="False" AllowsTransparency="True" PopupAnimation="Slide">
+        <Grid MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{TemplateBinding ActualWidth}" x:Name="DropDown" SnapsToDevicePixels="True">
+          <Border x:Name="DropDownBorder" Background="{StaticResource Macad.Brushes.Popup.Background}" BorderBrush="{StaticResource Macad.Brushes.Popup.Border}" BorderThickness="1" />
+          <ScrollViewer Margin="4,6,4,6" Style="{StaticResource Macad.Styles.ScrollViewer}" SnapsToDevicePixels="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="True" Background="{x:Null}">
+            <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+          </ScrollViewer>
+        </Grid>
+      </Popup>
+    </Grid>
+    <ControlTemplate.Triggers>
+      <Trigger Property="HasItems" Value="false">
+        <Setter Property="MinHeight" Value="95" TargetName="DropDownBorder" />
+      </Trigger>
+      <Trigger Property="IsEnabled" Value="false">
+        <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.TextBox.Disabled.Text}" />
+        <Setter Property="Opacity" TargetName="grid" Value="0.5" />
+      </Trigger>
+      <Trigger Property="IsGrouping" Value="true">
+        <Setter Property="ScrollViewer.CanContentScroll" Value="false" />
+      </Trigger>
+      <Trigger Property="AllowsTransparency" SourceName="Popup" Value="true">
+        <Setter Property="Margin" Value="0,2,0,0" TargetName="DropDownBorder" />
+      </Trigger>
+      <Trigger Property="IsEditable" Value="true">
+        <Setter Property="IsTabStop" Value="false" />
+        <Setter Property="Visibility" Value="Visible" TargetName="PART_EditableTextBox" />
+        <Setter Property="Visibility" Value="Hidden" TargetName="ContentSite" />
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <Style TargetType="{x:Type ComboBox}">
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Button.Text}" />
+    <Setter Property="SnapsToDevicePixels" Value="true" />
+    <Setter Property="Template" Value="{StaticResource Macad.Templates.ComboBox}" />
+  </Style>
+  <!--endregion-->
+  <!--region Styles\ThirdPartyControls\DockBrushes.xaml-->
+  <Color x:Key="Macad.Colors.Dock.Accent">#FFFECA34</Color>
+  <Color x:Key="Macad.Colors.Dock.Background">#FFA8A8A8</Color>
+  <Color x:Key="Macad.Colors.Dock.Border">#FF484848</Color>
+  <Color x:Key="Macad.Colors.Dock.ActiveText">#FF000000</Color>
+  <Color x:Key="Macad.Colors.Dock.ActiveBackground">#FFFECA34</Color>
+  <Color x:Key="Macad.Colors.Dock.InactiveText">#FF606060</Color>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ControlAccentBrushKey}" Color="#FFFECA34" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.Background}" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.PanelBorderBrush}" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.TabBackground}" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.FloatingDocumentWindowBackground}" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.FloatingDocumentWindowBorder}" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.FloatingToolWindowBackground}" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.FloatingToolWindowBorder}" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DockingButtonForegroundBrushKey}" Color="#FF787878" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DockingButtonForegroundArrowBrushKey}" Color="#FF303030" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DockingButtonStarBackgroundBrushKey}" Opacity="0.4" Color="#FFD8D8D8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.PreviewBoxBorderBrushKey}" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.PreviewBoxBackgroundBrushKey}" Opacity="0.5" Color="#FF909090" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionActiveBackground}" Color="#FFFECA34" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionActiveGrip}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionActiveText}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionInactiveBackground}" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionInactiveGrip}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionInactiveText}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonActiveGlyph}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonActiveHoveredBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonActiveHoveredBorder}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonActiveHoveredGlyph}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonActivePressedBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonActivePressedBorder}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonActivePressedGlyph}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonInactiveGlyph}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonInactiveHoveredBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonInactiveHoveredBorder}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonInactiveHoveredGlyph}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonInactivePressedBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonInactivePressedBorder}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowCaptionButtonInactivePressedGlyph}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowTabSelectedActiveBackground}" Color="#FFFECA34" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowTabSelectedActiveText}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowTabSelectedInactiveBackground}" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowTabSelectedInactiveText}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowTabUnselectedBackground}" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowTabUnselectedText}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowTabUnselectedHoveredBackground}" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.ToolWindowTabUnselectedHoveredText}" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabSelectedActiveBackground}" Color="#FFFECA34" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabSelectedActiveText}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabSelectedInactiveBackground}" Color="#FFC0C0C0" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabSelectedInactiveText}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabUnselectedBackground}" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabUnselectedText}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabUnselectedHoveredBackground}" Color="#FFA8A8A8" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabUnselectedHoveredText}" Color="#FF484848" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedActiveGlyph}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedActiveHoveredBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedActiveHoveredBorder}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedActiveHoveredGlyph}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedActivePressedBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedActivePressedBorder}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedActivePressedGlyph}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedInactiveGlyph}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedInactiveHoveredBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedInactiveHoveredBorder}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedInactiveHoveredGlyph}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedInactivePressedBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedInactivePressedBorder}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellTabButtonSelectedInactivePressedGlyph}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellOverflowButtonDefaultGlyph}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellOverflowButtonHoveredBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellOverflowButtonHoveredBorder}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellOverflowButtonHoveredGlyph}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellOverflowButtonPressedBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellOverflowButtonPressedBorder}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.DocumentWellOverflowButtonPressedGlyph}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.AutoHideTabDefaultBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.AutoHideTabDefaultBorder}" Color="#FF787878" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.AutoHideTabDefaultText}" Color="#FF606060" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.AutoHideTabHoveredBackground}" options:Freeze="True">Transparent</SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.AutoHideTabHoveredBorder}" Color="#FFFECA34" options:Freeze="True"></SolidColorBrush>
+  <SolidColorBrush x:Key="{x:Static dock:ResourceKeys.AutoHideTabHoveredText}" Color="#FF000000" options:Freeze="True"></SolidColorBrush>
+  <!--endregion-->
+  <!--region Styles\ThirdPartyControls\DockControls.xaml-->
+  <Style x:Key="Macad.Styles.Dock.AnchorablePaneControlStyle" TargetType="{x:Type dockControls:LayoutAnchorablePaneControl}" BasedOn="{StaticResource AvalonDockThemeVs2013AnchorablePaneControlStyle}">
+    <Setter Property="ItemContainerStyle">
+      <Setter.Value>
+        <Style TargetType="{x:Type TabItem}">
+          <Setter Property="Background" Value="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabUnselectedBackground}}" />
+          <Setter Property="BorderBrush" Value="Transparent" />
+          <Setter Property="Foreground" Value="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabUnselectedText}}" />
+          <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+          <Setter Property="ToolTip" Value="{Binding ToolTip}" />
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="{x:Type TabItem}">
+                <Grid SnapsToDevicePixels="true">
+                  <Border x:Name="SelectedBD" Margin="1,-1,1,0" BorderBrush="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabSelectedActiveBackground}}" BorderThickness="0,5,0,0" Visibility="Collapsed" />
+                  <Border x:Name="Bd" Margin="0" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding Background}" BorderThickness="1,0,1,1">
+                    <ContentPresenter x:Name="Content" Margin="6,1,6,3" HorizontalAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" VerticalAlignment="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" ContentSource="Header" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                  </Border>
+                </Grid>
+                <ControlTemplate.Triggers>
+                  <Trigger Property="Selector.IsSelected" Value="true">
+                    <Setter TargetName="SelectedBD" Property="Visibility" Value="Visible" />
+                    <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource {x:Static dock:ResourceKeys.PanelBorderBrush}}" />
+                    <Setter Property="Panel.ZIndex" Value="1" />
+                  </Trigger>
+                  <!--  Tool Window : Tab / Selected, active  -->
+                  <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                      <Condition Binding="{Binding IsSelected}" Value="True" />
+                      <Condition Binding="{Binding IsActive}" Value="True" />
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="SelectedBD" Property="BorderBrush" Value="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabSelectedActiveBackground}}" />
+                    <Setter Property="Background" Value="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabSelectedActiveBackground}}" />
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabSelectedActiveText}}" />
+                  </MultiDataTrigger>
+                  <!--  Tool Window : Tab / Selected, inactive  -->
+                  <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                      <Condition Binding="{Binding IsSelected}" Value="True" />
+                      <Condition Binding="{Binding IsActive}" Value="False" />
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="SelectedBD" Property="BorderBrush" Value="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabSelectedInactiveBackground}}" />
+                    <Setter Property="Background" Value="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabSelectedInactiveBackground}}" />
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabSelectedInactiveText}}" />
+                  </MultiDataTrigger>
+                  <!--  Tool Window : Tab / Unselected, hovered  -->
+                  <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                      <Condition Property="IsMouseOver" Value="true" />
+                      <Condition Property="Selector.IsSelected" Value="false" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Background" Value="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabUnselectedHoveredBackground}}" />
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static dock:ResourceKeys.ToolWindowTabUnselectedHoveredText}}" />
+                    <Setter Property="Panel.ZIndex" Value="0" />
+                  </MultiTrigger>
+                  <Trigger Property="IsEnabled" Value="false">
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                  </Trigger>
+                </ControlTemplate.Triggers>
+              </ControlTemplate>
+            </Setter.Value>
+          </Setter>
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type TabControl}}, Path=Items.Count}" Value="1">
+              <Setter Property="Visibility" Value="Collapsed" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\ThirdPartyControls\RibbonControls.xaml-->
+  <Style TargetType="{x:Type Fluent:ApplicationMenu}">
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Base80}" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.White}" />
+    <Style.Triggers>
+      <Trigger Property="IsMouseOver" Value="True">
+        <Setter Property="Background" Value="{StaticResource Macad.Brushes.AccentDark}" />
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+  <Style x:Key="Fluent.Ribbon.Styles.MenuGroupSeparator" TargetType="{x:Type Fluent:GroupSeparatorMenuItem}">
+    <Setter Property="Template" Value="{StaticResource Fluent.Ribbon.Templates.MenuGroupSeparator}" />
+  </Style>
+  <ControlTemplate x:Key="Fluent.Ribbon.Templates.MenuGroupSeparator" TargetType="{x:Type Fluent:GroupSeparatorMenuItem}">
+    <Grid Height="Auto" Background="{StaticResource Fluent.Ribbon.Brushes.GroupSeparator.Background}">
+      <TextBlock Margin="7,1" FontSize="11" FontWeight="SemiBold" Text="{TemplateBinding Header, Converter={mmp:StringUppercaseConverter}}" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" />
+    </Grid>
+  </ControlTemplate>
+  <Style TargetType="{x:Type Fluent:RibbonTabItem}">
+    <Setter Property="Margin" Value="2,0,0,0" />
+  </Style>
+  <Style TargetType="{x:Type Fluent:RibbonTitleBar}">
+    <Setter Property="HeaderTemplate">
+      <Setter.Value>
+        <DataTemplate>
+          <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Binding}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" FontSize="14" FontWeight="SemiBold" />
+        </DataTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Fluent.Ribbon.Styles.WindowCommands.CaptionButton" TargetType="{x:Type Button}">
+    <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.Background}" />
+    <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.Foreground}" />
+    <Setter Property="VerticalAlignment" Value="Stretch" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="UseLayoutRounding" Value="True" />
+    <Setter Property="Padding" Value="1" />
+    <Setter Property="Width" Value="46" />
+    <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.WindowCommands.CaptionButton}" />
+    <Style.Triggers>
+      <Trigger Property="IsMouseOver" Value="True">
+        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.MouseOver.Background}" />
+      </Trigger>
+      <Trigger Property="IsPressed" Value="True">
+        <Setter Property="Background" Value="{DynamicResource Fluent.Ribbon.Brushes.WindowCommands.CaptionButton.Pressed.Background}" />
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+  <Style x:Key="Macad.Styles.MenuItem.MRU" TargetType="Fluent:MenuItem">
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Black}" />
+    <Setter Property="Margin" Value="2,0" />
+    <Setter Property="RecognizesAccessKey" Value="false" />
+    <Setter Property="Fluent:RibbonProperties.IconSize" Value="Medium" />
+    <Setter Property="OverridesDefaultStyle" Value="True" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Fluent:MenuItem}">
+          <ControlTemplate.Resources>
+            <ResourceDictionary>
+              <Style x:Key="{x:Type ScrollViewer}" BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuScrollViewer}" TargetType="{x:Type ScrollViewer}" />
+            </ResourceDictionary>
+          </ControlTemplate.Resources>
+          <mmp:StretchPanel>
+            <Grid Width="340" HorizontalAlignment="Left" Height="Auto" Background="Transparent">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+              <Border x:Name="border" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="Auto" Margin="0" HorizontalAlignment="Stretch" Background="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" BorderThickness="1" CornerRadius="2" Visibility="Collapsed" />
+              <TextBlock x:Name="textBlock" Grid.Column="1" Width="Auto" Height="Auto" Margin="3 3 3 0" VerticalAlignment="Top" FontWeight="Bold" Text="{Binding Header, RelativeSource={RelativeSource TemplatedParent}, Converter={mmp:ExtractFileNameNoExtensionConverter}}" TextTrimming="CharacterEllipsis" d:LayoutOverrides="Width" />
+              <TextBlock x:Name="textBlockDesc" Grid.Column="1" Grid.Row="1" Width="Auto" Height="Auto" FontSize="10" Margin="3 0 3 3" HorizontalAlignment="Stretch" VerticalAlignment="Top" TextWrapping="Wrap" d:LayoutOverrides="Width" Foreground="{StaticResource Macad.Brushes.TextLight}">
+                <mmp:Behaviors.Behavior>
+                  <mmp:PathEllipsisTextBehaviour OriginalPath="{Binding Header, RelativeSource={RelativeSource TemplatedParent}, Converter={mmp:ExtractFileDirectoryConverter}}" />
+                </mmp:Behaviors.Behavior>
+              </TextBlock>
+              <Fluent:IconPresenter x:Name="iconImage" Grid.RowSpan="2" Margin="3 3 3 3" HorizontalAlignment="Center" VerticalAlignment="Center" IconSize="{Binding Path=(Fluent:RibbonProperties.IconSize), RelativeSource={RelativeSource TemplatedParent}}" LargeIcon="{Binding Icon, RelativeSource={RelativeSource TemplatedParent}}" />
+            </Grid>
+          </mmp:StretchPanel>
+          <ControlTemplate.Triggers>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsHighlighted" Value="True" />
+                <Condition Property="IsEnabled" Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter TargetName="border" Property="Visibility" Value="Visible" />
+            </MultiTrigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Fluent.Ribbon.Styles.FocusVisual.Rectangle" TargetType="{x:Type Rectangle}">
+    <Setter Property="Margin" Value="-1" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="Stroke" Value="{StaticResource Macad.Brushes.Black}" />
+    <Setter Property="StrokeThickness" Value="1" />
+    <Setter Property="StrokeDashArray" Value="2 2" />
+  </Style>
+  <ControlTemplate x:Key="Fluent.Ribbon.Templates.FocusVisual.Empty" TargetType="{x:Type Control}">
+    <Rectangle Stroke="Transparent" />
+  </ControlTemplate>
+  <!--endregion-->
+  <!--region Styles\ThirdPartyControls\RibbonSplitButton.xaml-->
+  <Style x:Key="Fluent.Ribbon.Styles.RibbonSplitButton" TargetType="{x:Type Fluent:SplitButton}">
+    <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonSplitButton}" />
+    <Setter Property="Height" Value="68" />
+    <Setter Property="Width" Value="Auto" />
+    <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.LabelText}" />
+    <Setter Property="SnapsToDevicePixels" Value="False" />
+    <Setter Property="HorizontalAlignment" Value="Left" />
+    <Setter Property="Fluent:KeyTip.AutoPlacement" Value="False" />
+    <Style.Triggers>
+      <Trigger Property="Size" Value="Large">
+        <Setter Property="Height" Value="68" />
+        <Setter Property="Fluent:KeyTip.HorizontalAlignment" Value="Center" />
+        <Setter Property="Fluent:KeyTip.VerticalAlignment" Value="Bottom" />
+      </Trigger>
+      <Trigger Property="Size" Value="Middle">
+        <Setter Property="Height" Value="22" />
+        <Setter Property="Fluent:KeyTip.HorizontalAlignment" Value="Right" />
+        <Setter Property="Fluent:KeyTip.VerticalAlignment" Value="Center" />
+        <Setter Property="Fluent:KeyTip.Margin" Value="0,0,-5,0" />
+      </Trigger>
+      <Trigger Property="Size" Value="Small">
+        <Setter Property="Height" Value="22" />
+        <Setter Property="Width" Value="32" />
+        <Setter Property="Fluent:KeyTip.HorizontalAlignment" Value="Right" />
+        <Setter Property="Fluent:KeyTip.VerticalAlignment" Value="Center" />
+        <Setter Property="Fluent:KeyTip.Margin" Value="0,0,-5,0" />
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+  <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonSplitButton" TargetType="{x:Type Fluent:SplitButton}">
+    <ControlTemplate.Resources>
+      <Style BasedOn="{StaticResource Fluent.Ribbon.Styles.MenuSeparator}" TargetType="{x:Type Separator}" />
+    </ControlTemplate.Resources>
+    <Grid>
+      <Border BorderThickness="1" Name="PART_ButtonBorder" BorderBrush="Transparent" Background="Transparent" VerticalAlignment="Stretch">
+        <StackPanel Orientation="Vertical" Name="stackPanel" KeyboardNavigation.TabNavigation="Local">
+          <Fluent:ToggleButton x:Name="PART_Button" Command="{TemplateBinding Command}" CommandParameter="{TemplateBinding CommandParameter}" CommandTarget="{TemplateBinding CommandTarget}" Margin="0,0,0,0" Height="Auto" Width="Auto" Style="{DynamicResource Fluent.Ribbon.Styles.InnerButton}" LargeIcon="{Binding LargeIcon, RelativeSource={RelativeSource TemplatedParent}}" Icon="{Binding Icon, RelativeSource={RelativeSource TemplatedParent}}" IsEnabled="{TemplateBinding IsButtonEnabled}" Header="{TemplateBinding Header}" ToolTip="{TemplateBinding ToolTip}" GroupName="{Binding GroupName, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" IsChecked="{Binding IsChecked, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" IsDefinitive="{TemplateBinding IsDefinitive}" CanAddToQuickAccessToolBar="{TemplateBinding CanAddButtonToQuickAccessToolBar}" />
+          <Border BorderThickness="0,0,0,0" Name="downBorder" BorderBrush="Transparent" Background="Transparent" Margin="0,0,0,0">
+            <Grid>
+              <Fluent:TwoLineLabel x:Name="controlLabel" Text="{TemplateBinding Header}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,1,2,2" HasGlyph="{TemplateBinding HasTriangle}" />
+            </Grid>
+          </Border>
+        </StackPanel>
+      </Border>
+      <Popup x:Name="PART_Popup" Placement="Bottom" IsOpen="{TemplateBinding IsDropDownOpen}" AllowsTransparency="True" Focusable="False" PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}" Margin="0,0,-4,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
+        <Grid Name="DropDown" IsEnabled="{TemplateBinding IsEnabled}" SnapsToDevicePixels="True" Margin="0" VerticalAlignment="Top">
+          <Border x:Name="PART_DropDownBorder" MinWidth="{TemplateBinding ActualWidth}" SnapsToDevicePixels="True" Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}" BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Border}" BorderThickness="1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <Grid Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+              <Border VerticalAlignment="Top" Width="Auto" Height="Auto" BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Background}" BorderThickness="1" />
+              <Grid Margin="1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*" />
+                  <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <ScrollViewer x:Name="PART_ScrollViewer" Style="{DynamicResource Fluent.Ribbon.Styles.MenuScrollViewer}" Margin="1" MaxHeight="{TemplateBinding MaxDropDownHeight}" SnapsToDevicePixels="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden">
+                  <StackPanel x:Name="PART_MenuPanel" Orientation="Vertical" IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Cycle" />
+                </ScrollViewer>
+                <Border x:Name="resizeBorder" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="11" BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Resize.Border}" BorderThickness="0,1,0,0" Grid.Row="1" Background="{DynamicResource Fluent.Ribbon.Brushes.DropDown.Resize.Background}">
+                  <Grid>
+                    <Thumb x:Name="PART_ResizeVerticalThumb" HorizontalAlignment="Stretch" Margin="0,0,0,-90" Width="Auto" Height="10" VerticalAlignment="Top" Cursor="SizeNS" Template="{DynamicResource Fluent.Ribbon.Templates.ResizeVerticalThumb}" />
+                    <Thumb x:Name="PART_ResizeBothThumb" HorizontalAlignment="Right" Margin="0,0,0,-90" Width="10" Height="10" VerticalAlignment="Top" Cursor="SizeNWSE" Template="{DynamicResource Fluent.Ribbon.Templates.ResizeBothThum}" />
+                  </Grid>
+                </Border>
+              </Grid>
+            </Grid>
+          </Border>
+        </Grid>
+      </Popup>
+    </Grid>
+    <ControlTemplate.Triggers>
+      <Trigger Property="ResizeMode" Value="None">
+        <Setter Property="Visibility" TargetName="resizeBorder" Value="Collapsed" />
+      </Trigger>
+      <Trigger Property="ResizeMode" Value="Both">
+        <Setter Property="Visibility" TargetName="PART_ResizeVerticalThumb" Value="Collapsed" />
+        <Setter Property="Visibility" TargetName="PART_ResizeBothThumb" Value="Visible" />
+        <Setter Property="Visibility" TargetName="resizeBorder" Value="Visible" />
+      </Trigger>
+      <Trigger Property="ResizeMode" Value="Vertical">
+        <Setter Property="Visibility" TargetName="PART_ResizeBothThumb" Value="Collapsed" />
+        <Setter Property="Visibility" TargetName="PART_ResizeVerticalThumb" Value="Visible" />
+        <Setter Property="Visibility" TargetName="resizeBorder" Value="Visible" />
+      </Trigger>
+      <Trigger Property="IsChecked" Value="True">
+        <Setter Property="BorderBrush" TargetName="PART_ButtonBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Border}" />
+        <Setter Property="Background" TargetName="PART_ButtonBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.Checked.Background}" />
+      </Trigger>
+      <Trigger Property="Size" Value="Small">
+        <Setter Property="Size" TargetName="PART_Button" Value="Small" />
+        <Setter Property="Orientation" TargetName="stackPanel" Value="Horizontal" />
+        <Setter Property="Width" TargetName="controlLabel" Value="10" />
+        <Setter Property="Margin" TargetName="controlLabel" Value="0,-19,0,0" />
+        <Setter Property="Text" TargetName="controlLabel" Value="" />
+        <Setter Property="Padding" TargetName="downBorder" Value="1,0,0,0" />
+      </Trigger>
+      <Trigger Property="Size" Value="Middle">
+        <Setter Property="Size" TargetName="PART_Button" Value="Middle" />
+        <Setter Property="Orientation" TargetName="stackPanel" Value="Horizontal" />
+        <Setter Property="Width" TargetName="controlLabel" Value="10" />
+        <Setter Property="Margin" TargetName="controlLabel" Value="0,-19,0,0" />
+        <Setter Property="Text" TargetName="controlLabel" Value="" />
+      </Trigger>
+      <Trigger Property="IsButtonEnabled" Value="False">
+        <Setter Property="IsEnabled" TargetName="PART_Button" Value="False" />
+      </Trigger>
+      <Trigger Property="IsEnabled" Value="False">
+        <Setter Property="IsEnabled" TargetName="PART_Button" Value="False" />
+        <Setter Property="Opacity" TargetName="controlLabel" Value="0.5" />
+      </Trigger>
+      <Trigger Property="IsDropDownOpen" Value="True">
+        <Setter Property="BorderBrush" TargetName="PART_ButtonBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+        <Setter Property="Background" TargetName="PART_ButtonBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
+      </Trigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="IsMouseOver" Value="True" SourceName="PART_Button" />
+          <Condition Property="IsDropDownOpen" Value="False" />
+          <Condition Property="IsChecked" Value="False" />
+        </MultiTrigger.Conditions>
+        <Setter Property="BorderBrush" TargetName="PART_ButtonBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+      </MultiTrigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="IsMouseOver" Value="True" SourceName="PART_Button" />
+          <Condition Property="IsDropDownOpen" Value="False" />
+          <Condition Property="IsChecked" Value="True" />
+        </MultiTrigger.Conditions>
+        <Setter Property="BorderBrush" TargetName="PART_ButtonBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Border}" />
+      </MultiTrigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="IsMouseOver" Value="True" SourceName="downBorder" />
+          <Condition Property="IsDropDownOpen" Value="False" />
+          <Condition Property="IsChecked" Value="False" />
+        </MultiTrigger.Conditions>
+        <Setter Property="BorderBrush" TargetName="PART_ButtonBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+        <Setter Property="Background" TargetName="downBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
+        <Setter Property="BorderBrush" TargetName="downBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+      </MultiTrigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="IsMouseOver" Value="True" SourceName="downBorder" />
+          <Condition Property="IsDropDownOpen" Value="False" />
+          <Condition Property="IsChecked" Value="True" />
+        </MultiTrigger.Conditions>
+        <Setter Property="BorderBrush" TargetName="PART_ButtonBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Border}" />
+        <Setter Property="Background" TargetName="downBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Background}" />
+        <Setter Property="BorderBrush" TargetName="downBorder" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Border}" />
+      </MultiTrigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <Style x:Key="Fluent.Ribbon.Styles.InnerButton" TargetType="{x:Type Fluent:ToggleButton}">
+    <Setter Property="Template" Value="{DynamicResource Fluent.Ribbon.Templates.RibbonInnerButton}" />
+    <Setter Property="VerticalAlignment" Value="Stretch" />
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="Fluent:KeyTip.AutoPlacement" Value="{Binding Path=(Fluent:KeyTip.AutoPlacement), RelativeSource={RelativeSource AncestorType={x:Type Fluent:SplitButton}}}" />
+    <Style.Triggers>
+      <Trigger Property="Size" Value="Large">
+        <Setter Property="Fluent:KeyTip.HorizontalAlignment" Value="Center" />
+        <Setter Property="Fluent:KeyTip.VerticalAlignment" Value="Top" />
+      </Trigger>
+      <Trigger Property="Size" Value="Middle">
+        <Setter Property="Fluent:KeyTip.HorizontalAlignment" Value="Left" />
+        <Setter Property="Fluent:KeyTip.VerticalAlignment" Value="Center" />
+        <Setter Property="Fluent:KeyTip.Margin" Value="-5,0,0,0" />
+      </Trigger>
+      <Trigger Property="Size" Value="Small">
+        <Setter Property="Fluent:KeyTip.HorizontalAlignment" Value="Left" />
+        <Setter Property="Fluent:KeyTip.VerticalAlignment" Value="Center" />
+        <Setter Property="Fluent:KeyTip.Margin" Value="-5,0,0,0" />
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+  <ControlTemplate x:Key="Fluent.Ribbon.Templates.RibbonInnerButton" TargetType="{x:Type Fluent:ToggleButton}">
+    <Border x:Name="border" BorderThickness="0" Background="Transparent" BorderBrush="Transparent" Height="Auto" HorizontalAlignment="{TemplateBinding HorizontalAlignment}" VerticalAlignment="{TemplateBinding VerticalAlignment}" SnapsToDevicePixels="False">
+      <Grid Height="Auto">
+        <Rectangle x:Name="rectangle" StrokeThickness="0" Visibility="Collapsed"></Rectangle>
+        <StackPanel x:Name="stackPanel" Width="Auto" Orientation="Vertical" HorizontalAlignment="Stretch" SnapsToDevicePixels="True">
+          <ContentPresenter x:Name="iconImage" Margin="0,1,0,0" HorizontalAlignment="Center" Height="32" VerticalAlignment="Center" Content="{Fluent:ObjectToImageConverter {Binding LargeIcon, RelativeSource={RelativeSource TemplatedParent}}, '32,32', {Binding RelativeSource={RelativeSource TemplatedParent}}}" Width="32" SnapsToDevicePixels="True" />
+          <Fluent:TwoLineLabel x:Name="controlLabel" Text="{TemplateBinding Header}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="2,0,2,2" Visibility="Collapsed" />
+        </StackPanel>
+      </Grid>
+    </Border>
+    <ControlTemplate.Triggers>
+      <Trigger Property="IsPressed" Value="True">
+        <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Border}" />
+        <Setter Property="Background" TargetName="border" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.Pressed.Background}" />
+      </Trigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="IsMouseOver" Value="True" />
+          <Condition Property="IsPressed" Value="False" />
+          <Condition Property="IsEnabled" Value="True" />
+          <Condition Property="IsChecked" Value="False" />
+        </MultiTrigger.Conditions>
+        <Setter Property="Background" TargetName="border" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Background}" />
+        <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Fluent.Ribbon.Brushes.Button.MouseOver.Border}" />
+      </MultiTrigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="IsMouseOver" Value="True" />
+          <Condition Property="IsPressed" Value="False" />
+          <Condition Property="IsEnabled" Value="True" />
+          <Condition Property="IsChecked" Value="True" />
+        </MultiTrigger.Conditions>
+        <Setter Property="Background" TargetName="border" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Background}" />
+        <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Fluent.Ribbon.Brushes.ToggleButton.CheckedMouseOver.Border}" />
+      </MultiTrigger>
+      <Trigger Property="IsEnabled" Value="False">
+        <Setter Property="Opacity" TargetName="iconImage" Value="0.5" />
+        <Setter Property="Opacity" TargetName="controlLabel" Value="0.5" />
+        <Setter Property="Effect" TargetName="iconImage">
+          <Setter.Value>
+            <Fluent:GrayscaleEffect />
+          </Setter.Value>
+        </Setter>
+      </Trigger>
+      <Trigger Property="Size" Value="Small">
+        <Setter Property="Orientation" TargetName="stackPanel" Value="Horizontal" />
+        <Setter Property="Visibility" TargetName="controlLabel" Value="Collapsed" />
+        <Setter Property="HasTwoLines" TargetName="controlLabel" Value="False" />
+        <Setter Property="Width" TargetName="iconImage" Value="16" />
+        <Setter Property="Height" TargetName="iconImage" Value="16" />
+        <Setter Property="Margin" TargetName="iconImage" Value="1,0,2,0" />
+        <Setter Property="Content" TargetName="iconImage" Value="{Fluent:ObjectToImageConverter {Binding Icon, RelativeSource={RelativeSource TemplatedParent}}, '16,16', {Binding RelativeSource={RelativeSource TemplatedParent}}}" />
+        <Setter Property="Margin" TargetName="controlLabel" Value="2,0,2,1" />
+      </Trigger>
+      <Trigger Property="Size" Value="Middle">
+        <Setter Property="Orientation" TargetName="stackPanel" Value="Horizontal" />
+        <Setter Property="Width" TargetName="stackPanel" Value="Auto" />
+        <Setter Property="VerticalAlignment" TargetName="iconImage" Value="Center" />
+        <Setter Property="HasTwoLines" TargetName="controlLabel" Value="False" />
+        <Setter Property="Margin" TargetName="controlLabel" Value="2,0,-1,1" />
+        <Setter Property="VerticalAlignment" TargetName="border" Value="Stretch" />
+        <Setter Property="Width" TargetName="iconImage" Value="16" />
+        <Setter Property="Height" TargetName="iconImage" Value="16" />
+        <Setter Property="Margin" TargetName="iconImage" Value="1,0,2,0" />
+        <Setter Property="Content" TargetName="iconImage" Value="{Fluent:ObjectToImageConverter {Binding Icon, RelativeSource={RelativeSource TemplatedParent}}, '16,16', {Binding RelativeSource={RelativeSource TemplatedParent}}}" />
+        <Setter Property="Visibility" TargetName="controlLabel" Value="Visible" />
+        <Setter Property="VerticalAlignment" TargetName="controlLabel" Value="Center" />
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <!--endregion-->
+  <!--region Styles\CommonControls\CheckBox.xaml-->
+  <Style TargetType="{x:Type CheckBox}">
+    <Setter Property="SnapsToDevicePixels" Value="true" />
+    <Setter Property="Focusable" Value="True" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type CheckBox}">
+          <BulletDecorator Background="Transparent">
+            <BulletDecorator.Bullet>
+              <Border x:Name="Border" Width="14" Height="14" CornerRadius="0" BorderThickness="1" BorderBrush="{StaticResource Macad.Brushes.Button.Border}" Background="{StaticResource  Macad.Brushes.Button.Background}">
+                <Grid>
+                  <Path Visibility="Collapsed" Width="10" Height="10" x:Name="CheckMark" SnapsToDevicePixels="False" StrokeThickness="2" Data="M 0 0 L 10 10 M 0 10 L 10 0">
+                    <Path.Stroke>
+                      <SolidColorBrush Color="{StaticResource Macad.Colors.Glyph}" />
+                    </Path.Stroke>
+                  </Path>
+                  <Path Visibility="Collapsed" Width="10" Height="10" x:Name="InderminateMark" SnapsToDevicePixels="False" StrokeThickness="2" Data="M 0 10 L 10 0">
+                    <Path.Stroke>
+                      <SolidColorBrush Color="{StaticResource Macad.Colors.Glyph}" />
+                    </Path.Stroke>
+                  </Path>
+                </Grid>
+              </Border>
+            </BulletDecorator.Bullet>
+            <ContentPresenter Margin="4,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" RecognizesAccessKey="True" />
+          </BulletDecorator>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsChecked" Value="True">
+              <Setter TargetName="CheckMark" Property="Visibility" Value="Visible" />
+              <Setter TargetName="Border" Property="Background" Value="{StaticResource Macad.Brushes.Button.Checked.Background}" />
+              <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Checked.Border}" />
+            </Trigger>
+            <Trigger Property="IsChecked" Value="{x:Null}">
+              <Setter TargetName="InderminateMark" Property="Visibility" Value="Visible" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+              <Setter TargetName="Border" Property="Opacity" Value="0.5" />
+            </Trigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsMouseOver" Value="True" />
+                <Condition Property="IsChecked" Value="False" />
+              </MultiTrigger.Conditions>
+              <Setter TargetName="Border" Property="Background" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsMouseOver" Value="True" />
+                <Condition Property="IsChecked" Value="True" />
+                <Condition Property="IsPressed" Value="False" />
+              </MultiTrigger.Conditions>
+              <Setter TargetName="Border" Property="Background" Value="{StaticResource Macad.Brushes.Button.CheckedMouseOver.Background}" />
+              <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.CheckedMouseOver.Border}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsPressed" Value="True" />
+                <Condition Property="IsChecked" Value="False" />
+              </MultiTrigger.Conditions>
+              <Setter TargetName="Border" Property="Background" Value="{StaticResource Macad.Brushes.Button.Pressed.Background}" />
+            </MultiTrigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CommonControls\Expander.xaml-->
+  <Style x:Key="Macad.Styles.Expander.HeaderFocusVisual">
+    <Setter Property="Control.Template">
+      <Setter.Value>
+        <ControlTemplate>
+          <Border>
+            <Rectangle SnapsToDevicePixels="true" Margin="0" Stroke="Black" StrokeDashArray="1 2" StrokeThickness="1" />
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Macad.Styles.ToggleButton.ExpanderDownHeader" TargetType="{x:Type ToggleButton}">
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Panel.Header.Border}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Panel.Header.Border}" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ToggleButton}">
+          <Border x:Name="Border" Padding="{TemplateBinding Padding}" Background="{StaticResource Macad.Brushes.Panel.Header.Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,1,0,1">
+            <Grid SnapsToDevicePixels="False" Background="Transparent">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="19" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Path Grid.Column="0" HorizontalAlignment="Center" x:Name="Right_Arrow" VerticalAlignment="Center" Fill="{StaticResource Macad.Brushes.Glyph}" Data="M 0 0 L 0 8 L 8 4 Z" />
+              <Path Grid.Column="0" Visibility="Collapsed" HorizontalAlignment="Center" x:Name="Down_Arrow" VerticalAlignment="Center" Fill="{StaticResource Macad.Brushes.Glyph}" Data="M 0 0 L 8 0 L 4 8 Z" />
+              <ContentPresenter Grid.Column="1" SnapsToDevicePixels="True" HorizontalAlignment="{TemplateBinding HorizontalAlignment}" Margin="4,2,0,2" VerticalAlignment="Center" RecognizesAccessKey="True" />
+            </Grid>
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsChecked" Value="true">
+              <Setter Property="Visibility" TargetName="Down_Arrow" Value="Visible" />
+              <Setter Property="Visibility" TargetName="Right_Arrow" Value="Collapsed" />
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+              <Setter Property="Background" TargetName="Border" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style TargetType="{x:Type Expander}">
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Button.Text}" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Margin" Value="0,2,0,2" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Expander}">
+          <Border SnapsToDevicePixels="true" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0">
+            <DockPanel x:Name="dockPanel">
+              <ToggleButton x:Name="HeaderSite" FontFamily="{TemplateBinding FontFamily}" FontSize="{TemplateBinding FontSize}" FontStretch="{TemplateBinding FontStretch}" FontStyle="{TemplateBinding FontStyle}" FontWeight="{TemplateBinding FontWeight}" Foreground="{TemplateBinding Foreground}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" Padding="{TemplateBinding Padding}" FocusVisualStyle="{StaticResource Macad.Styles.Expander.HeaderFocusVisual}" Focusable="{TemplateBinding Focusable}" Margin="0" MinHeight="0" MinWidth="0" Style="{StaticResource Macad.Styles.ToggleButton.ExpanderDownHeader}" Content="{TemplateBinding Header}" ContentTemplate="{TemplateBinding HeaderTemplate}" ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}" IsChecked="{Binding Path=IsExpanded, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" DockPanel.Dock="Top" />
+              <Border x:Name="border" Visibility="Collapsed" Background="{TemplateBinding Background}" BorderBrush="{StaticResource Macad.Brushes.Button.Border}" BorderThickness="0">
+                <ContentPresenter x:Name="ExpandSite" Focusable="false" Margin="0" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" DockPanel.Dock="Bottom" />
+              </Border>
+            </DockPanel>
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsExpanded" Value="true">
+              <Setter Property="Visibility" TargetName="border" Value="Visible" />
+            </Trigger>
+            <Trigger Property="ExpandDirection" Value="Down" />
+            <!--<Trigger Property="ExpandDirection" Value="Right">
+                            <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Right" />
+                            <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Left" />
+                            <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderRightHeaderStyle}" />
+                        </Trigger>
+                        <Trigger Property="ExpandDirection" Value="Up">
+                            <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Top" />
+                            <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Bottom" />
+                            <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderUpHeaderStyle}" />
+                        </Trigger>
+                        <Trigger Property="ExpandDirection" Value="Left">
+                            <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Left" />
+                            <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Right" />
+                            <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderLeftHeaderStyle}" />
+                        </Trigger>-->
+            <Trigger Property="IsEnabled" Value="false">
+              <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.TextBox.Disabled.Text}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CommonControls\GroupBox.xaml-->
+  <Style TargetType="{x:Type GroupBox}">
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Panel.Border}" />
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Panel.Background}" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type GroupBox}">
+          <StackPanel SnapsToDevicePixels="true">
+            <Border x:Name="Header" Background="{StaticResource Macad.Brushes.Panel.Header.Background}" BorderThickness="1,1,1,0" CornerRadius="2,2,0,0" BorderBrush="{TemplateBinding BorderBrush}" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+              <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" ContentSource="Header" Margin="5,2" RecognizesAccessKey="False" TextBlock.Foreground="{StaticResource Macad.Brushes.Button.Text}" />
+            </Border>
+            <Border Margin="0,0,0,2" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1,0,1,1">
+              <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Margin="{TemplateBinding Padding}" />
+            </Border>
+          </StackPanel>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CommonControls\ListBox.xaml-->
+  <Style TargetType="{x:Type ListBox}">
+    <Setter Property="SnapsToDevicePixels" Value="true" />
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.ListView.Background}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.ListView.Border}" />
+    <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" />
+    <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+    <Setter Property="ScrollViewer.CanContentScroll" Value="True" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ListBox}">
+          <Grid>
+            <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="2" Background="{TemplateBinding Background}" />
+            <ScrollViewer Margin="0" Style="{StaticResource Macad.Styles.ScrollViewer}" Focusable="false" Background="{x:Null}" HorizontalContentAlignment="Stretch">
+              <StackPanel Margin="1" IsItemsHost="true" />
+            </ScrollViewer>
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsGrouping" Value="true">
+              <Setter Property="ScrollViewer.CanContentScroll" Value="false" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style d:IsControlPart="True" TargetType="{x:Type ListBoxItem}">
+    <Setter Property="SnapsToDevicePixels" Value="true" />
+    <Setter Property="OverridesDefaultStyle" Value="true" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ListBoxItem}">
+          <Border x:Name="border" BorderThickness="1" Padding="{TemplateBinding Control.Padding}" SnapsToDevicePixels="True" CornerRadius="2" VerticalAlignment="Center" Margin="0" Background="Transparent">
+            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Margin="5,0" x:Name="contentPresenter" />
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+              <Setter TargetName="border" Property="Background" Value="{StaticResource Macad.Brushes.ListView.MouseOver.Background}" />
+              <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource Macad.Brushes.ListView.MouseOver.Border}" />
+            </Trigger>
+            <Trigger Property="IsSelected" Value="true">
+              <Setter TargetName="border" Property="Background" Value="{StaticResource Macad.Brushes.ListView.Selected.Background}" />
+              <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource Macad.Brushes.ListView.Selected.Border}" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="true">
+              <Setter TargetName="border" Property="Background" Value="{StaticResource Macad.Brushes.ListView.Focused.Background}" />
+              <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource Macad.Brushes.ListView.Focused.Border}" />
+            </Trigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsMouseOver" Value="True" />
+                <Condition Property="Selector.IsSelected" Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter TargetName="border" Property="Background" Value="{StaticResource Macad.Brushes.ListView.SelectedMouseOver.Background}" />
+              <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource Macad.Brushes.ListView.SelectedMouseOver.Border}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsFocused" Value="True" />
+                <Condition Property="Selector.IsSelected" Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter TargetName="border" Property="Background" Value="{StaticResource Macad.Brushes.ListView.SelectedFocused.Background}" />
+              <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource Macad.Brushes.ListView.SelectedFocused.Border}" />
+            </MultiTrigger>
+            <MultiDataTrigger>
+              <MultiDataTrigger.Conditions>
+                <Condition Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=IsActive, FallbackValue=False}" Value="False" />
+                <Condition Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsSelected}" Value="True" />
+              </MultiDataTrigger.Conditions>
+              <Setter TargetName="border" Property="Background" Value="{StaticResource Macad.Brushes.ListView.Focused.Background}" />
+              <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource Macad.Brushes.ListView.Focused.Border}" />
+            </MultiDataTrigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.ListView.Text}" />
+    <Style.Triggers>
+      <Trigger Property="Selector.IsSelected" Value="True">
+        <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.ListView.Text}" />
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+  <Style x:Key="Macad.Styles.ListBoxItem.NoSelection" d:IsControlPart="True" TargetType="{x:Type ListBoxItem}">
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.ListView.Text}" />
+    <Setter Property="SnapsToDevicePixels" Value="true" />
+    <Setter Property="OverridesDefaultStyle" Value="true" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ListBoxItem}">
+          <Border x:Name="border" BorderThickness="0" Padding="{TemplateBinding Control.Padding}" SnapsToDevicePixels="True" VerticalAlignment="Center" Margin="0" Background="Transparent">
+            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Margin="5,0" x:Name="contentPresenter" />
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CommonControls\Menu.xaml-->
+  <ControlTemplate x:Key="MenuItemTemplate" TargetType="{x:Type MenuItem}">
+    <Grid Background="{StaticResource Macad.Brushes.Popup.Background}">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="25" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <Border x:Name="border" HorizontalAlignment="Stretch" Margin="0" Width="Auto" Visibility="Collapsed" Background="{StaticResource Macad.Brushes.Button.MouseOver.Background}" BorderBrush="{StaticResource Macad.Brushes.Button.MouseOver.Border}" BorderThickness="1" Grid.Column="0" Grid.ColumnSpan="4"></Border>
+      <ContentPresenter x:Name="textBlock" ContentSource="Header" ContentTemplate="{TemplateBinding HeaderTemplate}" ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}" Width="Auto" Height="Auto" Margin="5,3,3,3" VerticalAlignment="Center" Grid.Column="1" d:LayoutOverrides="Width" RecognizesAccessKey="False" />
+      <Border x:Name="iconImageBorder" BorderThickness="1">
+        <ContentPresenter x:Name="iconImage" Height="16" Width="16" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Fluent:ObjectToImageConverter {Binding Icon, RelativeSource={RelativeSource TemplatedParent}}, '16,16', {Binding RelativeSource={RelativeSource TemplatedParent}}}" Margin="3,2,2,2" SnapsToDevicePixels="True" />
+      </Border>
+      <Image x:Name="checkedImage" HorizontalAlignment="Center" VerticalAlignment="Center" Width="14" Height="14" Stretch="Uniform" Visibility="Collapsed" SnapsToDevicePixels="True">
+        <Image.Source>
+          <DrawingImage>
+            <DrawingImage.Drawing>
+              <GeometryDrawing Brush="{StaticResource Macad.Brushes.Glyph}" Geometry="{StaticResource Macad.Geometries.Check}" />
+            </DrawingImage.Drawing>
+          </DrawingImage>
+        </Image.Source>
+      </Image>
+      <TextBlock x:Name="gestureTextBlock" Text="{TemplateBinding InputGestureText}" Width="Auto" Height="Auto" Margin="3,3,15,3" VerticalAlignment="Center" Grid.Column="2" />
+      <Grid Grid.Column="3" Margin="4,0,6,0" x:Name="ArrowPanel" VerticalAlignment="Center">
+        <Path x:Name="ArrowPanelPath" VerticalAlignment="Center" Fill="{TemplateBinding Foreground}" Data="M0,0 L0,8 L4,4 z" />
+      </Grid>
+      <Popup IsOpen="{Binding Path=IsSubmenuOpen, RelativeSource={RelativeSource TemplatedParent}}" Placement="Right" x:Name="SubMenuPopup" Focusable="false" AllowsTransparency="true" PopupAnimation="{DynamicResource {x:Static SystemParameters.MenuPopupAnimationKey}}">
+        <Grid x:Name="SubMenu">
+          <Border x:Name="SubMenuBorder" Background="{StaticResource Macad.Brushes.Popup.Background}" BorderThickness="1" />
+          <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Cycle" />
+        </Grid>
+      </Popup>
+    </Grid>
+    <ControlTemplate.Triggers>
+      <Trigger Property="Role" Value="TopLevelHeader">
+        <Setter Property="Margin" Value="0,1,0,1" />
+        <Setter Property="Padding" Value="6,3,6,3" />
+        <Setter Property="Grid.IsSharedSizeScope" Value="true" />
+        <Setter Property="Placement" Value="Bottom" TargetName="SubMenuPopup" />
+        <Setter Property="Visibility" Value="Collapsed" TargetName="ArrowPanel" />
+      </Trigger>
+      <Trigger Property="Role" Value="TopLevelItem">
+        <Setter Property="Margin" Value="0,1,0,1" />
+        <Setter Property="Padding" Value="6,3,6,3" />
+        <Setter Property="Visibility" Value="Collapsed" TargetName="ArrowPanel" />
+      </Trigger>
+      <Trigger Property="Role" Value="SubmenuHeader">
+        <Setter Property="DockPanel.Dock" Value="Top" />
+        <Setter Property="Padding" Value="0,2,0,2" />
+        <Setter Property="Grid.IsSharedSizeScope" Value="true" />
+      </Trigger>
+      <Trigger Property="Role" Value="SubmenuItem">
+        <Setter Property="DockPanel.Dock" Value="Top" />
+        <Setter Property="Padding" Value="0,2,0,2" />
+        <Setter Property="Visibility" Value="Collapsed" TargetName="ArrowPanel" />
+      </Trigger>
+      <Trigger Property="IsSuspendingPopupAnimation" Value="true">
+        <Setter Property="PopupAnimation" Value="None" TargetName="SubMenuPopup" />
+      </Trigger>
+      <Trigger Property="AllowsTransparency" SourceName="SubMenuPopup" Value="true">
+        <Setter Property="Margin" Value="0,0,3,3" TargetName="SubMenu" />
+        <Setter Property="SnapsToDevicePixels" Value="true" TargetName="SubMenu" />
+        <Setter Property="BitmapEffect" Value="{DynamicResource PopupDropShadow}" TargetName="SubMenuBorder" />
+      </Trigger>
+      <Trigger Property="InputGestureText" Value="{x:Null}">
+        <Setter Property="Visibility" TargetName="gestureTextBlock" Value="Collapsed" />
+      </Trigger>
+      <Trigger Property="InputGestureText" Value="">
+        <Setter Property="Visibility" TargetName="gestureTextBlock" Value="Collapsed" />
+      </Trigger>
+      <Trigger Property="IsChecked" Value="True">
+        <Setter Property="Background" TargetName="iconImageBorder" Value="{DynamicResource Macad.Brushes.Button.Checked.Background}" />
+        <Setter Property="BorderBrush" TargetName="iconImageBorder" Value="{DynamicResource Macad.Brushes.Button.Checked.Border}" />
+      </Trigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="Icon" Value="{x:Null}" />
+          <Condition Property="IsChecked" Value="True" />
+        </MultiTrigger.Conditions>
+        <Setter Property="Visibility" TargetName="checkedImage" Value="Visible" />
+      </MultiTrigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="IsHighlighted" Value="True" />
+          <Condition Property="IsEnabled" Value="True" />
+        </MultiTrigger.Conditions>
+        <Setter Property="Visibility" TargetName="border" Value="Visible" />
+      </MultiTrigger>
+      <Trigger Property="IsEnabled" Value="False">
+        <Setter Property="Opacity" TargetName="iconImage" Value="0.5" />
+        <Setter Property="Opacity" TargetName="checkedImage" Value="0.5" />
+        <Setter Property="Opacity" TargetName="textBlock" Value="0.5" />
+        <Setter Property="Opacity" TargetName="ArrowPanel" Value="0.5" />
+        <Setter Property="Opacity" TargetName="gestureTextBlock" Value="0.5" />
+        <Setter Property="Effect" TargetName="iconImage">
+          <Setter.Value>
+            <Fluent:GrayscaleEffect />
+          </Setter.Value>
+        </Setter>
+        <Setter Property="Effect" TargetName="checkedImage">
+          <Setter.Value>
+            <Fluent:GrayscaleEffect />
+          </Setter.Value>
+        </Setter>
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <Style TargetType="{x:Type MenuItem}">
+    <Setter Property="Template" Value="{StaticResource MenuItemTemplate}" />
+  </Style>
+  <Style x:Key="Macad.Styles.MenuItem.GroupHeader" TargetType="{x:Type MenuItem}">
+    <Setter Property="IsEnabled" Value="false" />
+    <Setter Property="IsTabStop" Value="false" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type MenuItem}">
+          <Grid Height="Auto" Background="{StaticResource Macad.Brushes.Popup.Header.Background}">
+            <TextBlock Margin="7,1" FontSize="11" FontWeight="SemiBold" Text="{TemplateBinding Header, Converter={mmp:StringUppercaseConverter}}" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" />
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style TargetType="{x:Type ContextMenu}">
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Popup.Background}" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="OverridesDefaultStyle" Value="True" />
+    <Setter Property="Grid.IsSharedSizeScope" Value="true" />
+    <Setter Property="HasDropShadow" Value="True" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ContextMenu}">
+          <Border Background="Transparent">
+            <mmp:DropShadow Margin="6">
+              <Grid>
+                <Border x:Name="Border" BorderBrush="{StaticResource Macad.Brushes.Popup.Border}" BorderThickness="1">
+                  <StackPanel Background="{TemplateBinding Background}" IsItemsHost="True" ClipToBounds="True" Orientation="Vertical" />
+                </Border>
+              </Grid>
+            </mmp:DropShadow>
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style TargetType="{x:Type mmp:ToolbarContextMenu}">
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Popup.Background}" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="OverridesDefaultStyle" Value="True" />
+    <Setter Property="Grid.IsSharedSizeScope" Value="true" />
+    <Setter Property="HasDropShadow" Value="True" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ContextMenu}">
+          <StackPanel>
+            <Border x:Name="PART_ToolbarBorder" Background="Transparent" HorizontalAlignment="Left">
+              <mmp:DropShadow Margin="6">
+                <Border Background="{TemplateBinding Background}" BorderBrush="{StaticResource Macad.Brushes.Popup.Border}" BorderThickness="1">
+                  <ContentPresenter Content="{Binding ToolbarContent, RelativeSource={RelativeSource TemplatedParent}}" SnapsToDevicePixels="True" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,2" />
+                </Border>
+              </mmp:DropShadow>
+            </Border>
+            <Border Background="Transparent" HorizontalAlignment="Left">
+              <mmp:DropShadow Margin="6">
+                <Border x:Name="Border" BorderBrush="{StaticResource Macad.Brushes.Popup.Border}" BorderThickness="1">
+                  <StackPanel Background="{TemplateBinding Background}" IsItemsHost="True" ClipToBounds="True" Orientation="Vertical" />
+                </Border>
+              </mmp:DropShadow>
+            </Border>
+          </StackPanel>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CommonControls\Slider.xaml-->
+  <Style x:Key="Macad.Styles.Thumb.Slider" d:IsControlPart="True" TargetType="{x:Type Thumb}">
+    <Setter Property="SnapsToDevicePixels" Value="true" />
+    <Setter Property="Height" Value="14" />
+    <Setter Property="Width" Value="14" />
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.Background}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Border}" />
+    <Setter Property="BorderThickness" Value="1,1,1,1" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Thumb}">
+          <Grid>
+            <Border x:Name="Background" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="2" />
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter TargetName="Background" Property="Background" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+            </Trigger>
+            <Trigger Property="IsDragging" Value="True">
+              <Setter TargetName="Background" Property="Background" Value="{StaticResource Macad.Brushes.Button.Checked.Background}" />
+              <Setter TargetName="Background" Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Checked.Border}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style TargetType="{x:Type Slider}">
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.ScrollBar.Foreground}" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Slider}">
+          <Grid x:Name="GridRoot">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="Auto" MinHeight="{TemplateBinding MinHeight}" />
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TickBar x:Name="TopTick" Visibility="Collapsed" Height="4" SnapsToDevicePixels="True" Placement="Top" Fill="{DynamicResource Macad.Brushes.Glyph}" />
+            <Border x:Name="Border" Grid.Row="1" Margin="0" Height="3" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" />
+            <Track Grid.Row="1" x:Name="PART_Track">
+              <Track.Thumb>
+                <Thumb Style="{StaticResource Macad.Styles.Thumb.Slider}" Foreground="{x:Null}" Width="20" />
+              </Track.Thumb>
+              <Track.IncreaseRepeatButton>
+                <RepeatButton Style="{StaticResource Macad.Styles.RepeatButton.Scroll}" Command="Slider.IncreaseLarge" />
+              </Track.IncreaseRepeatButton>
+              <Track.DecreaseRepeatButton>
+                <RepeatButton Style="{StaticResource Macad.Styles.RepeatButton.Scroll}" Command="Slider.DecreaseLarge" />
+              </Track.DecreaseRepeatButton>
+            </Track>
+            <TickBar Visibility="Collapsed" Grid.Row="2" x:Name="BottomTick" Height="4" SnapsToDevicePixels="True" Placement="Bottom" Fill="{TemplateBinding Foreground}" />
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="TickPlacement" Value="TopLeft">
+              <Setter Property="Visibility" Value="Visible" TargetName="TopTick" />
+            </Trigger>
+            <Trigger Property="TickPlacement" Value="BottomRight">
+              <Setter Property="Visibility" Value="Visible" TargetName="BottomTick" />
+            </Trigger>
+            <Trigger Property="TickPlacement" Value="Both">
+              <Setter Property="Visibility" Value="Visible" TargetName="TopTick" />
+              <Setter Property="Visibility" Value="Visible" TargetName="BottomTick" />
+            </Trigger>
+            <Trigger Property="Orientation" Value="Vertical">
+              <Setter Property="LayoutTransform" TargetName="GridRoot">
+                <Setter.Value>
+                  <RotateTransform Angle="-90" />
+                </Setter.Value>
+              </Setter>
+              <Setter TargetName="PART_Track" Property="Orientation" Value="Horizontal" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CommonControls\TextBlock.xaml-->
+  <Style x:Key="Macad.Styles.TextBlock.PopupHeader" TargetType="{x:Type TextBlock}">
+    <Setter Property="Padding" Value="10,2" />
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Popup.Header.Background}" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Popup.Header.Text}" />
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CommonControls\TextBox.xaml-->
+  <Style TargetType="{x:Type TextBox}">
+    <Setter Property="Margin" Value="0,2" />
+    <Setter Property="Padding" Value="2,3,2,2" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="KeyboardNavigation.TabNavigation" Value="None" />
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    <Setter Property="AllowDrop" Value="true" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.TextBox.Text}" />
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.TextBox.Background}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.TextBox.Border}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="Width" Value="Auto" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type TextBox}">
+          <Border x:Name="Border" Opacity="1" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="2" SnapsToDevicePixels="True" TextOptions.TextFormattingMode="Display">
+            <ScrollViewer HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" Padding="0" x:Name="PART_ContentHost" Style="{StaticResource Macad.Styles.ScrollViewer}" />
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+              <Setter Property="Background" TargetName="Border" Value="{StaticResource Macad.Brushes.TextBox.Disabled.Background}" />
+              <!--<Setter Property="BorderBrush" TargetName="Border" Value="{StaticResource DisabledBorderBrush}" />-->
+              <!--<Setter Property="Foreground" Value="{StaticResource DisabledForegroundBrush}" />-->
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter Property="Background" TargetName="Border" Value="{StaticResource Macad.Brushes.TextBox.MouseOver.Background}" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+              <Setter Property="Background" TargetName="Border" Value="{StaticResource Macad.Brushes.TextBox.Focused.Background}" />
+            </Trigger>
+            <!--<Trigger Property="IsHighlighted" Value="True">
+                            <Setter Property="BorderBrush" TargetName="Border" Value="{StaticResource ControlFocusedBorderBrush}" />
+                        </Trigger>
+                        <Trigger Property="EvaluationError" Value="True">
+                            <Setter Property="Background" TargetName="Border" Value="{StaticResource ControlErrorBgGradientBrush}" />
+                        </Trigger>-->
+            <Trigger Property="mmp:GroupControls.Position" Value="Left">
+              <Setter TargetName="Border" Property="CornerRadius" Value="2,0,0,2" />
+              <Setter TargetName="Border" Property="BorderThickness" Value="1" />
+            </Trigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="HCenter">
+              <Setter TargetName="Border" Property="CornerRadius" Value="0" />
+              <Setter TargetName="Border" Property="BorderThickness" Value="0,1,1,1" />
+            </Trigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="Right">
+              <Setter TargetName="Border" Property="CornerRadius" Value="0,2,2,0" />
+              <Setter TargetName="Border" Property="BorderThickness" Value="0,1,1,1" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CommonControls\ToolBar.xaml-->
+  <Style x:Key="{x:Static ToolBar.SeparatorStyleKey}" TargetType="{x:Type Separator}">
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Glyph}" />
+    <Setter Property="MinWidth" Value="1" />
+    <Setter Property="MinHeight" Value="1" />
+    <Setter Property="Margin" Value="2,2,2,2" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Separator}">
+          <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true" />
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Macad.Styles.Button.ToolBar" TargetType="{x:Type Button}" BasedOn="{x:Null}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Text}" />
+    <!--<Setter Property="FontSize" Value="10"/>-->
+    <Setter Property="MinHeight" Value="22" />
+    <Setter Property="MinWidth" Value="22" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+              <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.MouseOver.Border}" />
+              <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+            </Trigger>
+            <Trigger Property="IsKeyboardFocused" Value="true">
+              <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.MouseOver.Border}" />
+              <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="true">
+              <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Pressed.Border}" />
+              <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.Pressed.Background}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+              <Setter Property="Foreground" Value="{StaticResource {x:Static SystemColors.GrayTextBrushKey}}" />
+              <Setter Property="Opacity" Value="0.5" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="{x:Static ToolBar.ButtonStyleKey}" TargetType="{x:Type Button}" BasedOn="{StaticResource Macad.Styles.Button.ToolBar}" />
+  <Style x:Key="{x:Static ToolBar.ToggleButtonStyleKey}" TargetType="{x:Type ToggleButton}">
+    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+    <Setter Property="Padding" Value="2" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="MinHeight" Value="22" />
+    <Setter Property="MinWidth" Value="22" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ToggleButton}">
+          <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsChecked" Value="true">
+              <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Checked.Border}" />
+              <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.Checked.Background}" />
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+              <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.MouseOver.Border}" />
+              <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+            </Trigger>
+            <Trigger Property="IsKeyboardFocused" Value="true">
+              <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.MouseOver.Border}" />
+            </Trigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsMouseOver" Value="true" />
+                <Condition Property="IsChecked" Value="true" />
+              </MultiTrigger.Conditions>
+              <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.CheckedMouseOver.Border}" />
+              <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.CheckedMouseOver.Background}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsKeyboardFocused" Value="true" />
+                <Condition Property="IsChecked" Value="true" />
+              </MultiTrigger.Conditions>
+              <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Checked.Border}" />
+              <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.MouseOver.Border}" />
+            </MultiTrigger>
+            <Trigger Property="IsPressed" Value="true">
+              <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Pressed.Border}" />
+              <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.MouseOver.Border}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+              <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+              <Setter Property="Opacity" Value="0.5" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Macad.Styles.ToggleButton.ToolBarHorizontalOverflow" TargetType="{x:Type ToggleButton}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Glyph}" />
+    <Setter Property="MinHeight" Value="0" />
+    <Setter Property="MinWidth" Value="0" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ToggleButton}">
+          <Border SnapsToDevicePixels="true" x:Name="Bd" CornerRadius="0,0,0,0" Background="{TemplateBinding Background}">
+            <Canvas SnapsToDevicePixels="true" HorizontalAlignment="Right" Margin="3,3" VerticalAlignment="Bottom" Width="6" Height="7">
+              <!--<Path Stroke="Black" Data="M 1 1.5 L 6 1.5"/>-->
+              <Path Stroke="{TemplateBinding Foreground}" Data="M 0 0.5 L 5 0.5" />
+              <!--<Path Fill="Black" Data="M 0.5 4 L 6.5 4 L 3.5 7 Z"/>-->
+              <Path Fill="{TemplateBinding Foreground}" Data="M -0.5 3 L 5.5 3 L 2.5 6 Z" />
+            </Canvas>
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+              <Setter Property="Background" TargetName="Bd" Value="{StaticResource Macad.Colors.Button.MouseOver.Background}" />
+            </Trigger>
+            <Trigger Property="IsKeyboardFocused" Value="true">
+              <Setter Property="Background" TargetName="Bd" Value="{StaticResource Macad.Colors.Button.MouseOver.Background}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+              <Setter Property="Visibility" Value="Hidden" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Macad.Styles.TextBox.ToolBar" TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Margin" Value="2" />
+    <Setter Property="Padding" Value="2" />
+  </Style>
+  <Style x:Key="Macad.Styles.Thumb.ToolBar" TargetType="{x:Type Thumb}">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Thumb}">
+          <Border SnapsToDevicePixels="True" Background="Transparent" Padding="{TemplateBinding Padding}" CornerRadius="0,0,0,0">
+            <Rectangle>
+              <Rectangle.Fill>
+                <DrawingBrush TileMode="Tile" Viewbox="0,0,4,4" ViewboxUnits="Absolute" Viewport="0,0,4,4" ViewportUnits="Absolute">
+                  <DrawingBrush.Drawing>
+                    <DrawingGroup>
+                      <GeometryDrawing Brush="White" Geometry="M 1 1 L 1 3 L 3 3 L 3 1 z" />
+                      <GeometryDrawing Brush="{StaticResource Macad.Brushes.Glyph}" Geometry="M 0 0 L 0 2 L 2 2 L 2 0 z" />
+                    </DrawingGroup>
+                  </DrawingBrush.Drawing>
+                </DrawingBrush>
+              </Rectangle.Fill>
+            </Rectangle>
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+              <Setter Property="Cursor" Value="SizeAll" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style TargetType="{x:Type ToolBar}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Text}" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ToolBar}">
+          <Grid SnapsToDevicePixels="true" Margin="3,1,1,1" x:Name="Grid">
+            <Grid HorizontalAlignment="Right" x:Name="OverflowGrid">
+              <ToggleButton x:Name="OverflowButton" IsEnabled="{TemplateBinding HasOverflowItems}" FocusVisualStyle="{x:Null}" Style="{StaticResource Macad.Styles.ToggleButton.ToolBarHorizontalOverflow}" ClickMode="Press" IsChecked="{Binding Path=IsOverflowOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
+              <Popup x:Name="OverflowPopup" Focusable="false" AllowsTransparency="true" IsOpen="{Binding Path=IsOverflowOpen, RelativeSource={RelativeSource TemplatedParent}}" Placement="Bottom" StaysOpen="False">
+                <Border x:Name="Shdw">
+                  <Border BorderThickness="1,1,1,1" Background="{StaticResource Macad.Brushes.Popup.Background}" BorderBrush="{StaticResource Macad.Brushes.Popup.Border}">
+                    <ToolBarOverflowPanel x:Name="PART_ToolBarOverflowPanel" Focusable="true" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" FocusVisualStyle="{x:Null}" Margin="2" WrapWidth="200" KeyboardNavigation.DirectionalNavigation="Cycle" KeyboardNavigation.TabNavigation="Cycle" />
+                  </Border>
+                </Border>
+              </Popup>
+            </Grid>
+            <Border Margin="0,0,11,0" x:Name="MainPanelBorder" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="0,0,0,0" Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}">
+              <Grid>
+                <DockPanel KeyboardNavigation.TabIndex="1" KeyboardNavigation.TabNavigation="Local">
+                  <Thumb x:Name="ToolBarThumb" Padding="6,5,1,6" Margin="-3,-1,0,0" Width="10" Style="{StaticResource Macad.Styles.Thumb.ToolBar}" />
+                  <ContentPresenter x:Name="ToolBarHeader" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,0" ContentSource="Header" />
+                  <ToolBarPanel x:Name="PART_ToolBarPanel" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Margin="0,0,2,0" IsItemsHost="true" Background="Transparent" />
+                </DockPanel>
+              </Grid>
+            </Border>
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsOverflowOpen" Value="true">
+              <Setter Property="IsEnabled" TargetName="ToolBarThumb" Value="false" />
+            </Trigger>
+            <Trigger Property="Header" Value="{x:Null}">
+              <Setter Property="Visibility" TargetName="ToolBarHeader" Value="Collapsed" />
+            </Trigger>
+            <Trigger Property="ToolBarTray.IsLocked" Value="true">
+              <Setter Property="Visibility" TargetName="ToolBarThumb" Value="Collapsed" />
+            </Trigger>
+            <Trigger Property="HasDropShadow" SourceName="OverflowPopup" Value="true">
+              <Setter Property="Margin" TargetName="Shdw" Value="0,0,5,5" />
+              <Setter Property="SnapsToDevicePixels" TargetName="Shdw" Value="true" />
+              <Setter Property="Background" TargetName="Shdw" Value="#71000000" />
+            </Trigger>
+            <Trigger Property="Orientation" Value="Vertical">
+              <Setter Property="Margin" TargetName="Grid" Value="1,3,1,1" />
+              <!--<Setter Property="Style" TargetName="OverflowButton" Value="{StaticResource ToolBarVerticalOverflowButtonStyle}"/>-->
+              <Setter Property="Height" TargetName="ToolBarThumb" Value="10" />
+              <Setter Property="Width" TargetName="ToolBarThumb" Value="Auto" />
+              <Setter Property="Margin" TargetName="ToolBarThumb" Value="-1,-3,0,0" />
+              <Setter Property="Padding" TargetName="ToolBarThumb" Value="5,6,6,1" />
+              <Setter Property="Margin" TargetName="ToolBarHeader" Value="0,0,0,4" />
+              <Setter Property="Margin" TargetName="PART_ToolBarPanel" Value="1,0,2,2" />
+              <Setter Property="DockPanel.Dock" TargetName="ToolBarThumb" Value="Top" />
+              <Setter Property="DockPanel.Dock" TargetName="ToolBarHeader" Value="Top" />
+              <Setter Property="HorizontalAlignment" TargetName="OverflowGrid" Value="Stretch" />
+              <Setter Property="VerticalAlignment" TargetName="OverflowGrid" Value="Bottom" />
+              <Setter Property="Placement" TargetName="OverflowPopup" Value="Right" />
+              <Setter Property="Margin" TargetName="MainPanelBorder" Value="0,0,0,11" />
+              <!--<Setter Property="Background" Value="{StaticResource ToolBarVerticalBackground}"/>-->
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+              <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Button.Disabled.Text}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style TargetType="{x:Type ToolBarTray}">
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Popup.Header.Background}" />
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CustomControls\ColorPicker.xaml-->
+  <Style TargetType="{x:Type mmp:ColorPicker}" BasedOn="{StaticResource {x:Type ComboBox}}">
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" />
+    <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+    <Setter Property="Padding" Value="4,4" />
+    <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.Background}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Border}" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type mmp:ColorPicker}">
+          <Grid Name="MainGrid" SnapsToDevicePixels="true">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="8" />
+            </Grid.ColumnDefinitions>
+            <!-- The Popup color picker panel -->
+            <Popup Name="PART_Popup" AllowsTransparency="true" Grid.ColumnSpan="2" Placement="Bottom" Margin="1" IsOpen="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}" AutomationProperties.AutomationId="ColorPickerPopup">
+              <Border x:Name="DropDownBorder" BorderThickness="1" Margin="0,0,5,5" BorderBrush="{TemplateBinding BorderBrush}" Background="{x:Null}">
+                <Grid x:Name="PART_ColorPickerGrid" />
+                <Border.Effect>
+                  <DropShadowEffect Opacity="0.75" />
+                </Border.Effect>
+              </Border>
+            </Popup>
+            <!-- The Popup dropdown button (arrow) -->
+            <ToggleButton Grid.ColumnSpan="2" Grid.Column="0" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" Template="{StaticResource Macad.Templates.ToggleButton.ComboBox}" IsChecked="{Binding Path=IsDropDownOpen,Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}" />
+            <!-- The combobox content -->
+            <ContentPresenter Grid.Column="0" IsHitTestVisible="false" Margin="{TemplateBinding Padding}" Content="{Binding SelectedColor, RelativeSource={RelativeSource Mode=TemplatedParent}}" VerticalAlignment="Center" HorizontalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+              <ContentPresenter.ContentTemplate>
+                <DataTemplate>
+                  <StackPanel Margin="4 0 4 0" Orientation="Horizontal" IsHitTestVisible="false">
+                    <Grid Width="13" Height="13" VerticalAlignment="Center">
+                      <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="{Binding Converter={mmp:ColorToBrushConverter}}" Stroke="Gray" SnapsToDevicePixels="True" />
+                    </Grid>
+                    <TextBlock Margin="8 0 0 0" VerticalAlignment="Center" Text="{Binding Converter={mmp:ColorToStringConverter}}" />
+                  </StackPanel>
+                </DataTemplate>
+              </ContentPresenter.ContentTemplate>
+            </ContentPresenter>
+          </Grid>
+          <!--<ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                            <Setter Property="Background" Value="#FFF4F4F4" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>-->
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Macad.Styles.ColorPicker.Grid" TargetType="{x:Type mmp:ColorPicker}" BasedOn="{StaticResource {x:Type ComboBox}}">
+    <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+    <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Disabled" />
+    <Setter Property="Padding" Value="4,4" />
+    <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type mmp:ColorPicker}">
+          <Grid Name="MainGrid" SnapsToDevicePixels="true">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!-- The Popup color picker panel -->
+            <Popup Name="PART_Popup" AllowsTransparency="true" Grid.ColumnSpan="2" Placement="Bottom" Margin="1" IsOpen="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}">
+              <Border x:Name="DropDownBorder" BorderThickness="1" Margin="0,0,5,5" BorderBrush="{TemplateBinding BorderBrush}" Background="{x:Null}">
+                <Grid x:Name="PART_ColorPickerGrid" />
+                <Border.Effect>
+                  <DropShadowEffect Opacity="0.75" />
+                </Border.Effect>
+              </Border>
+            </Popup>
+            <!-- The Popup dropdown button (arrow) -->
+            <!--<ToggleButton Template="{StaticResource Macad.Templates.ToggleButton.ComboBox}"
+                                      Background="{TemplateBinding Background}"
+                                      IsChecked="{Binding Path=IsDropDownOpen,Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}" />-->
+            <ToggleButton Grid.ColumnSpan="2" Grid.Column="0" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" Template="{DynamicResource Macad.Templates.ToggleButton.ComboBoxGrid}" IsChecked="{Binding Path=IsDropDownOpen,Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}" />
+            <!-- The combobox content -->
+            <ContentPresenter IsHitTestVisible="false" Margin="{TemplateBinding Padding}" Content="{Binding SelectedColor, RelativeSource={RelativeSource Mode=TemplatedParent}}" VerticalAlignment="Center" HorizontalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+              <ContentPresenter.ContentTemplate>
+                <DataTemplate>
+                  <Grid Margin="4 0 4 0" IsHitTestVisible="false">
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="13" />
+                      <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid Width="13" Height="13" VerticalAlignment="Center">
+                      <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="{Binding Converter={mmp:ColorToBrushConverter}}" Stroke="Gray" SnapsToDevicePixels="True" />
+                    </Grid>
+                    <TextBlock Margin="8 0 0 0" Grid.Column="1" VerticalAlignment="Center" Text="{Binding Converter={mmp:ColorToStringConverter}}" TextTrimming="CharacterEllipsis" />
+                  </Grid>
+                </DataTemplate>
+              </ContentPresenter.ContentTemplate>
+            </ContentPresenter>
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CustomControls\Dialog.xaml-->
+  <Style x:Key="Macad.Styles.Button.DialogFooter" TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Type Button}}">
+    <Setter Property="MinHeight" Value="27" />
+    <Setter Property="MinWidth" Value="80" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="Margin" Value="10,0" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Text}" />
+  </Style>
+  <Style TargetType="{x:Type mmp:Dialog}">
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Text}" />
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Popup.Background}" />
+    <Setter Property="MinWidth" Value="240" />
+    <Setter Property="MinHeight" Value="240" />
+    <Setter Property="ShowInTaskbar" Value="False" />
+    <Setter Property="ResizeMode" Value="NoResize" />
+    <Setter Property="SizeToContent" Value="WidthAndHeight" />
+    <Setter Property="UseLayoutRounding" Value="True" />
+    <Setter Property="RenderOptions.ClearTypeHint" Value="Enabled" />
+    <Setter Property="TextOptions.TextRenderingMode" Value="ClearType" />
+    <Setter Property="TextOptions.TextFormattingMode" Value="Display" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="AllowsTransparency" Value="True" />
+    <Setter Property="WindowStyle" Value="None" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="mmp:Dialog">
+          <Border Background="Transparent">
+            <mmp:DropShadow Margin="6">
+              <Grid>
+                <Border BorderBrush="{StaticResource Macad.Brushes.Popup.Border}" BorderThickness="2">
+                  <Grid>
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="Auto" />
+                      <RowDefinition Height="*" />
+                      <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <!-- title -->
+                    <Grid>
+                      <StackPanel Background="{StaticResource Macad.Brushes.Popup.Header.Background}">
+                        <TextBlock Text="{TemplateBinding Title, Converter={mmp:StringUppercaseConverter}}" HorizontalAlignment="Center" Foreground="Black" Margin="20,5" FontFamily="Segoe UI" FontSize="14" FontWeight="SemiBold" TextOptions.TextFormattingMode="Ideal" TextTrimming="CharacterEllipsis" />
+                        <Rectangle Height="1" Fill="{StaticResource Macad.Brushes.Popup.Header.Border}" />
+                      </StackPanel>
+                      <!-- header -->
+                      <ContentPresenter Content="{Binding Header, RelativeSource={RelativeSource TemplatedParent}}" Margin="0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Disabled" />
+                    </Grid>
+                    <!-- content -->
+                    <Grid Grid.Row="1" Background="{TemplateBinding Background}">
+                      <ContentPresenter Margin="30,30" ScrollViewer.VerticalScrollBarVisibility="Disabled" />
+                    </Grid>
+                    <!-- footer -->
+                    <Border Grid.Row="2" BorderThickness="0,1,0,0" BorderBrush="{StaticResource Macad.Brushes.Popup.Header.Border}" Background="{StaticResource Macad.Brushes.Popup.Header.Background}">
+                      <ContentPresenter Grid.Row="2" Margin="20,5" Content="{Binding Footer, RelativeSource={RelativeSource TemplatedParent}}" />
+                    </Border>
+                  </Grid>
+                </Border>
+                <Border BorderBrush="{StaticResource Macad.Brushes.Popup.Header.Border}" BorderThickness="2" Visibility="{Binding IsActive, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={mmp:BoolToVisibleHiddenConverter}}" />
+              </Grid>
+            </mmp:DropShadow>
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+    <Setter Property="WindowChrome.WindowChrome">
+      <Setter.Value>
+        <WindowChrome GlassFrameThickness="1" UseAeroCaptionButtons="False" />
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CustomControls\PanningScrollViewer.xaml-->
+  <Style x:Key="{x:Type mmp:PanningScrollViewer}" TargetType="{x:Type mmp:PanningScrollViewer}" BasedOn="{x:Null}">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type mmp:PanningScrollViewer}">
+          <Grid Background="{TemplateBinding Background}">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="Auto" MaxWidth="6" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+              <RowDefinition Height="Auto" MaxHeight="6" />
+            </Grid.RowDefinitions>
+            <ScrollContentPresenter Grid.Column="0" Grid.Row="0" Margin="{TemplateBinding Padding}" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" CanContentScroll="{TemplateBinding CanContentScroll}" />
+            <ScrollBar x:Name="PART_HorizontalScrollBar" Grid.Column="0" Grid.Row="1" Height="6" Style="{StaticResource Macad.Styles.ScrollBar.Minimal}" Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" Orientation="Horizontal" Value="{Binding Path=HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}" Minimum="0" Maximum="{TemplateBinding ScrollableWidth}" AutomationProperties.AutomationId="HorizontalScrollBar" />
+            <ScrollBar x:Name="PART_VerticalScrollBar" Grid.Column="1" Grid.Row="0" Width="6" Style="{StaticResource Macad.Styles.ScrollBar.Minimal}" Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Orientation="Vertical" Value="{Binding Path=VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Minimum="0" Maximum="{TemplateBinding ScrollableHeight}" AutomationProperties.AutomationId="VerticalScrollBar" />
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CustomControls\PathButton.xaml-->
+  <Style TargetType="{x:Type mmp:PathButton}" BasedOn="{x:Null}">
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.Background}" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Glyph}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Border}" />
+    <Setter Property="Padding" Value="7,2" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type mmp:PathButton}">
+          <Border Background="Transparent">
+            <Path x:Name="Path" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" Stretch="Uniform" Data="{TemplateBinding PathData}" Fill="{TemplateBinding Foreground}" />
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Glyph.MouseOver}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CustomControls\ToggleButton.xaml-->
+  <Style TargetType="{x:Type mmp:ToggleButton}">
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Button.Text}" />
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.Button.Background}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.Button.Border}" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Margin" Value="0,2" />
+    <Setter Property="Padding" Value="4,0" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type mmp:ToggleButton}">
+          <Border x:Name="border" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="2">
+            <Border x:Name="border1" Height="Auto" BorderBrush="Transparent" BorderThickness="{TemplateBinding BorderThickness}" Background="Transparent" CornerRadius="2" Padding="4,2">
+              <ContentPresenter Margin="{TemplateBinding Padding}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+            </Border>
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsPressed" Value="True">
+              <Setter Property="Background" TargetName="border" Value="{StaticResource Macad.Brushes.Button.Pressed.Background}" />
+              <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Macad.Brushes.Button.Pressed.Border}" />
+            </Trigger>
+            <Trigger Property="IsChecked" Value="True">
+              <Setter Property="Background" TargetName="border" Value="{StaticResource Macad.Brushes.Button.Checked.Background}" />
+              <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Macad.Brushes.Button.Checked.Border}" />
+            </Trigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsMouseOver" Value="True" />
+                <Condition Property="IsPressed" Value="False" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Background" TargetName="border" Value="{StaticResource Macad.Brushes.Button.MouseOver.Background}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsMouseOver" Value="True" />
+                <Condition Property="IsPressed" Value="False" />
+                <Condition Property="IsChecked" Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Background" TargetName="border" Value="{StaticResource Macad.Brushes.Button.CheckedMouseOver.Background}" />
+            </MultiTrigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="Left">
+              <Setter TargetName="border" Property="CornerRadius" Value="3,0,0,3" />
+              <Setter TargetName="border1" Property="CornerRadius" Value="3,0,0,3" />
+              <Setter TargetName="border" Property="BorderThickness" Value="1" />
+            </Trigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="HCenter">
+              <Setter TargetName="border" Property="CornerRadius" Value="0" />
+              <Setter TargetName="border1" Property="CornerRadius" Value="0" />
+              <Setter TargetName="border" Property="BorderThickness" Value="0,1,1,1" />
+            </Trigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="Right">
+              <Setter TargetName="border" Property="CornerRadius" Value="0,3,3,0" />
+              <Setter TargetName="border1" Property="CornerRadius" Value="0,3,3,0" />
+              <Setter TargetName="border" Property="BorderThickness" Value="0,1,1,1" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CustomControls\TreeViewEx.xaml-->
+  <Style TargetType="{x:Type treeview:EditTextBox}">
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.TextBox.Text}" />
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.TextBox.Background}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.TextBox.Border}" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="1" />
+    <Setter Property="AllowDrop" Value="true" />
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type TextBox}">
+          <StackPanel Orientation="Horizontal">
+            <Border x:Name="Bd" SnapsToDevicePixels="true" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+              <ScrollViewer x:Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+            </Border>
+          </StackPanel>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="false">
+              <Setter Property="Background" TargetName="Bd" Value="{StaticResource Macad.Brushes.TextBox.Disabled.Background}" />
+              <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.TextBox.Disabled.Text}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style TargetType="{x:Type treeview:TreeViewExItem}" x:Key="Macad.Styles.TreeViewExItem.Base">
+    <Setter Property="Background" Value="AliceBlue" />
+    <Setter Property="Control.HorizontalContentAlignment" Value="{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ItemsControl, AncestorLevel=1}, FallbackValue=Left}" />
+    <Setter Property="Control.VerticalContentAlignment" Value="{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ItemsControl, AncestorLevel=1}, FallbackValue=Center}" />
+    <Setter Property="Control.Padding" Value="1" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Margin" Value="0" />
+    <Setter Property="FrameworkElement.FocusVisualStyle">
+      <Setter.Value>
+        <Style TargetType="{x:Type IFrameworkInputElement}">
+          <Style.Resources>
+            <ResourceDictionary />
+          </Style.Resources>
+          <Setter Property="Control.Template">
+            <Setter.Value>
+              <ControlTemplate>
+                <Rectangle />
+              </ControlTemplate>
+            </Setter.Value>
+          </Setter>
+        </Style>
+      </Setter.Value>
+    </Setter>
+    <Setter Property="Control.Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type treeview:TreeViewExItem}">
+          <StackPanel Background="Transparent" x:Name="stacki">
+            <Border x:Name="border" BorderThickness="1" Padding="{TemplateBinding Control.Padding}" SnapsToDevicePixels="True" CornerRadius="2" VerticalAlignment="Center" Margin="1,0,1,0">
+              <DockPanel x:Name="ct">
+                <FrameworkElement DockPanel.Dock="Left" Margin="{Binding Offset, RelativeSource={RelativeSource TemplatedParent}, Converter={mmp:DoubleToThicknessLeftConverter}}" />
+                <ToggleButton DockPanel.Dock="Left" IsChecked="{Binding RelativeSource={RelativeSource AncestorType={x:Type treeview:TreeViewExItem}},Path=IsExpanded,FallbackValue=False}" Visibility="{Binding RelativeSource={RelativeSource AncestorType={x:Type treeview:TreeViewExItem}},Path=HasItems, Converter={mmp:BoolToVisibleHiddenConverter},FallbackValue=Hidden}" ClickMode="Press" Name="Expander" HorizontalAlignment="Right">
+                  <ToggleButton.Style>
+                    <Style TargetType="{x:Type ToggleButton}">
+                      <Style.Resources>
+                        <ResourceDictionary />
+                      </Style.Resources>
+                      <Setter Property="UIElement.Focusable" Value="False" />
+                      <Setter Property="FrameworkElement.Width" Value="16" />
+                      <Setter Property="FrameworkElement.Height" Value="16" />
+                      <Setter Property="Control.Template">
+                        <Setter.Value>
+                          <ControlTemplate TargetType="{x:Type ToggleButton}">
+                            <Border Padding="5" Background="#00FFFFFF" Width="16" Height="16" SnapsToDevicePixels="True">
+                              <Path Fill="Transparent" Stroke="{StaticResource Macad.Brushes.Glyph}" Name="ExpandPath">
+                                <Path.Data>
+                                  <PathGeometry Figures="M0,0L0,6L6,0z" />
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                  <RotateTransform Angle="135" CenterX="3" CenterY="3" />
+                                </Path.RenderTransform>
+                              </Path>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                              <Trigger Property="UIElement.IsMouseOver" Value="True">
+                                <Setter Property="Shape.Stroke" TargetName="ExpandPath" Value="Black" />
+                                <Setter Property="Shape.Fill" TargetName="ExpandPath" Value="Transparent" />
+                              </Trigger>
+                              <Trigger Property="ToggleButton.IsChecked" Value="True">
+                                <Setter Property="UIElement.RenderTransform" TargetName="ExpandPath">
+                                  <Setter.Value>
+                                    <RotateTransform Angle="180" CenterX="3" CenterY="3" />
+                                  </Setter.Value>
+                                </Setter>
+                                <Setter Property="Shape.Fill" TargetName="ExpandPath" Value="{StaticResource Macad.Brushes.Glyph}" />
+                                <!--<Setter Property="Shape.Stroke" TargetName="ExpandPath">
+                                                                    <Setter.Value>
+                                                                        <SolidColorBrush>#FFc8c8c8</SolidColorBrush>
+                                                                    </Setter.Value>
+                                                                </Setter>-->
+                              </Trigger>
+                            </ControlTemplate.Triggers>
+                          </ControlTemplate>
+                        </Setter.Value>
+                      </Setter>
+                    </Style>
+                  </ToggleButton.Style>
+                </ToggleButton>
+                <ContentPresenter x:Name="content" FocusManager.IsFocusScope="True" Content="{TemplateBinding HeaderedContentControl.Header}" ContentTemplate="{TemplateBinding HeaderedContentControl.HeaderTemplate}" ContentStringFormat="{TemplateBinding HeaderedItemsControl.HeaderStringFormat}" ContentTemplateSelector="{TemplateBinding HeaderedItemsControl.HeaderTemplateSelector}" ContentSource="Header" HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+              </DockPanel>
+            </Border>
+            <ItemsPresenter x:Name="itemsPresenter" Visibility="{Binding IsExpanded, RelativeSource={RelativeSource TemplatedParent}, Converter={mmp:BoolToVisibleCollapsedConverter}, FallbackValue=Hidden}" />
+          </StackPanel>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True" SourceName="border">
+              <Setter Property="Control.Background" TargetName="border" Value="{Binding BackgroundHovered, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+              <Setter Property="Border.BorderBrush" TargetName="border" Value="{Binding BorderBrushHovered, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+            </Trigger>
+            <Trigger Property="treeview:TreeViewExItem.IsSelected" Value="True">
+              <Setter Property="Control.Background" TargetName="border" Value="{Binding BackgroundSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+              <Setter Property="Border.BorderBrush" TargetName="border" Value="{Binding BorderBrushSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+              <!--<Setter Property="Control.Foreground" TargetName="content"
+                                    Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />-->
+            </Trigger>
+            <Trigger Property="treeview:TreeViewExItem.IsFocused" Value="True">
+              <Setter Property="Border.BorderBrush" TargetName="border" Value="{Binding BorderBrushFocused, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+              <Setter Property="Control.Background" TargetName="border" Value="{Binding BackgroundFocused, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+            </Trigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsMouseOver" Value="True" />
+                <Condition Property="treeview:TreeViewExItem.IsSelected" Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Border.BorderBrush" TargetName="border" Value="{Binding BorderBrushSelectedHovered, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+              <Setter Property="Control.Background" TargetName="border" Value="{Binding BackgroundSelectedHovered, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="treeview:TreeViewExItem.IsFocused" Value="True" />
+                <Condition Property="treeview:TreeViewExItem.IsSelected" Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Border.BorderBrush" TargetName="border" Value="{Binding BorderBrushFocusedSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+              <Setter Property="Control.Background" TargetName="border" Value="{Binding BackgroundFocusedSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+            </MultiTrigger>
+            <MultiDataTrigger>
+              <MultiDataTrigger.Conditions>
+                <Condition Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=IsActive, FallbackValue=False}" Value="False" />
+                <Condition Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsSelected}" Value="True" />
+              </MultiDataTrigger.Conditions>
+              <Setter Property="Border.BorderBrush" TargetName="border" Value="{Binding BorderBrushInactive, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+              <Setter Property="Control.Background" TargetName="border" Value="{Binding BackgroundInactive, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+            </MultiDataTrigger>
+            <Trigger Property="UIElement.IsEnabled" Value="False">
+              <Setter Property="TextElement.Foreground">
+                <Setter.Value>
+                  <DynamicResource ResourceKey="{StaticResource Macad.Brushes.TextBox.Disabled.Text}" />
+                </Setter.Value>
+              </Setter>
+            </Trigger>
+            <Trigger Property="IsEditable" Value="False">
+              <Setter Property="TextElement.Foreground" TargetName="content">
+                <Setter.Value>
+                  <DynamicResource ResourceKey="{StaticResource Macad.Brushes.TextBox.Disabled.Text}" />
+                </Setter.Value>
+              </Setter>
+            </Trigger>
+            <Trigger Property="treeview:TreeViewExItem.IsCurrentDropTarget" Value="True">
+              <Setter Property="Control.Background" TargetName="border" Value="{Binding BackgroundSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+              <Setter Property="Border.BorderBrush" TargetName="border" Value="{Binding BorderBrushSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+            </Trigger>
+            <Trigger Property="treeview:TreeViewExItem.IsEditing" Value="True">
+              <Setter TargetName="content" Property="ContentPresenter.ContentTemplate" Value="{Binding TemplateEdit, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+              <Setter Property="Padding" Value="0" />
+              <Setter Property="Control.Background" Value="{Binding BackgroundSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+              <Setter Property="Border.BorderBrush" Value="{Binding BorderBrushSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type treeview:TreeViewExItem}, AncestorLevel=1}}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style TargetType="{x:Type treeview:TreeViewExItem}" BasedOn="{StaticResource Macad.Styles.TreeViewExItem.Base}">
+    <Setter Property="BorderBrushFocusedSelected" Value="{StaticResource Macad.Brushes.ListView.SelectedFocused.Border}" />
+    <Setter Property="BackgroundFocusedSelected" Value="{StaticResource Macad.Brushes.ListView.SelectedFocused.Background}" />
+    <Setter Property="BorderBrushSelectedHovered" Value="{StaticResource Macad.Brushes.ListView.SelectedMouseOver.Border}" />
+    <Setter Property="BackgroundSelectedHovered" Value="{StaticResource Macad.Brushes.ListView.SelectedMouseOver.Background}" />
+    <Setter Property="BorderBrushFocused" Value="{StaticResource Macad.Brushes.ListView.Focused.Border}" />
+    <Setter Property="BackgroundFocused" Value="{StaticResource Macad.Brushes.ListView.Focused.Background}" />
+    <Setter Property="BorderBrushSelected" Value="{StaticResource Macad.Brushes.ListView.Selected.Border}" />
+    <Setter Property="BackgroundSelected" Value="{StaticResource Macad.Brushes.ListView.Selected.Border}" />
+    <Setter Property="BorderBrushHovered" Value="{StaticResource Macad.Brushes.ListView.MouseOver.Border}" />
+    <Setter Property="BackgroundHovered" Value="{StaticResource Macad.Brushes.ListView.MouseOver.Background}" />
+    <Setter Property="BorderBrushInactive" Value="{StaticResource Macad.Brushes.ListView.Disabled.Border}" />
+    <Setter Property="BackgroundInactive" Value="{StaticResource Macad.Brushes.ListView.Focused.Background}" />
+  </Style>
+  <Style TargetType="{x:Type treeview:TreeViewEx}">
+    <Setter Property="InsertTemplate">
+      <Setter.Value>
+        <DataTemplate>
+          <DockPanel Background="{TemplateBinding Panel.Background}" HorizontalAlignment="Stretch">
+            <Polygon Points="0,0 10,5 0,10" Fill="{Binding InsertionMarkerBrush}" DockPanel.Dock="Left" />
+            <Polygon Points="0,0 -10,5 0,10" Fill="{Binding InsertionMarkerBrush}" DockPanel.Dock="Right" Margin="0,0,2,0" />
+            <Rectangle Fill="{Binding InsertionMarkerBrush}" Height="1" DockPanel.Dock="Left" />
+          </DockPanel>
+        </DataTemplate>
+      </Setter.Value>
+    </Setter>
+    <Setter Property="InsertionMarkerBrush" Value="{StaticResource Macad.Brushes.Glyph}" />
+    <Setter Property="Panel.Background" Value="{StaticResource Macad.Brushes.ListView.Background}" />
+    <Setter Property="VirtualizingStackPanel.IsVirtualizing" Value="False" />
+    <Setter Property="Border.BorderBrush" Value="#FF828790" />
+    <Setter Property="Border.BorderThickness" Value="1" />
+    <Setter Property="Control.Padding" Value="1" />
+    <Setter Property="TextElement.Foreground">
+      <Setter.Value>
+        <DynamicResource ResourceKey="{StaticResource Macad.Colors.ListView.Text}" />
+      </Setter.Value>
+    </Setter>
+    <Setter Property="ScrollViewer.HorizontalScrollBarVisibility">
+      <Setter.Value>
+        <x:Static Member="ScrollBarVisibility.Auto" />
+      </Setter.Value>
+    </Setter>
+    <Setter Property="ScrollViewer.VerticalScrollBarVisibility">
+      <Setter.Value>
+        <x:Static Member="ScrollBarVisibility.Auto" />
+      </Setter.Value>
+    </Setter>
+    <Setter Property="Control.VerticalContentAlignment">
+      <Setter.Value>
+        <x:Static Member="VerticalAlignment.Center" />
+      </Setter.Value>
+    </Setter>
+    <Setter Property="Control.Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type treeview:TreeViewEx}">
+          <Border BorderThickness="{TemplateBinding Border.BorderThickness}" BorderBrush="{TemplateBinding Border.BorderBrush}" Name="Bd" SnapsToDevicePixels="True">
+            <ScrollViewer CanContentScroll="True" x:Name="scroller" HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}" VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}" Background="{TemplateBinding Panel.Background}" Padding="{TemplateBinding Control.Padding}" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" Focusable="False">
+              <ItemsPresenter x:Name="content" DockPanel.Dock="Top" />
+            </ScrollViewer>
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="UIElement.IsEnabled" Value="False">
+              <Setter Property="Panel.Background" TargetName="Bd">
+                <Setter.Value>
+                  <DynamicResource ResourceKey="{TemplateBinding Panel.Background}" />
+                </Setter.Value>
+              </Setter>
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\CustomControls\ValueEditBox.xaml-->
+  <Style TargetType="{x:Type mmp:ValueEditBox}">
+    <Setter Property="Margin" Value="0,2" />
+    <Setter Property="Padding" Value="2,3,2,3" />
+    <Setter Property="HorizontalContentAlignment" Value="Right" />
+    <Setter Property="KeyboardNavigation.TabNavigation" Value="None" />
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    <Setter Property="AllowDrop" Value="false" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.TextBox.Text}" />
+    <Setter Property="Background" Value="{StaticResource Macad.Brushes.TextBox.Background}" />
+    <Setter Property="BorderBrush" Value="{StaticResource Macad.Brushes.TextBox.Border}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="HorizontalAlignment" Value="Left" />
+    <Setter Property="Width" Value="80" />
+    <Setter Property="FontFamily" Value="Tahoma" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type mmp:ValueEditBox}">
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Border x:Name="PART_TextBox" Grid.Column="1" Opacity="1" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="2" SnapsToDevicePixels="True" TextOptions.TextFormattingMode="Display">
+              <Grid HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <ScrollViewer x:Name="PART_ContentHost" Grid.Column="0" Margin="0" Padding="0" Style="{StaticResource Macad.Styles.ScrollViewer}" />
+                <TextBlock Grid.Column="1" Text="{Binding Units, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={mmp:ValueUnitsToStringConverter}}" Margin="0,0,2,1" VerticalAlignment="Center" />
+              </Grid>
+            </Border>
+            <Button x:Name="DecButton" Grid.Column="0" Width="20" VerticalAlignment="Stretch" Padding="0" Margin="0" Visibility="Collapsed" Focusable="False" mmp:GroupControls.Position="Left" Command="{x:Static mmp:ValueEditBox.DecCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}">
+              <Path HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="True" UseLayoutRounding="True" Stroke="{TemplateBinding Foreground}" StrokeThickness="1" Data="{StaticResource Macad.Geometries.Decrement}" Stretch="None" />
+            </Button>
+            <Button x:Name="IncButton" Grid.Column="2" Width="20" VerticalAlignment="Stretch" Padding="0" Margin="0" Visibility="Collapsed" Focusable="False" mmp:GroupControls.Position="Right" Command="{x:Static mmp:ValueEditBox.IncCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}">
+              <Path HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="True" UseLayoutRounding="True" Stroke="{TemplateBinding Foreground}" StrokeThickness="1" Data="{StaticResource Macad.Geometries.Increment}" Stretch="None" />
+            </Button>
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+              <Setter Property="Background" TargetName="PART_TextBox" Value="{StaticResource Macad.Brushes.TextBox.Disabled.Background}" />
+              <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.TextBox.Disabled.Text}" />
+              <!--<Setter Property="BorderBrush" TargetName="PART_TextBox" Value="{StaticResource DisabledBorderBrush}" />-->
+              <!--<Setter Property="Foreground" Value="{StaticResource DisabledForegroundBrush}" />-->
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter Property="Background" TargetName="PART_TextBox" Value="{StaticResource Macad.Brushes.TextBox.MouseOver.Background}" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+              <Setter Property="Background" TargetName="PART_TextBox" Value="{StaticResource Macad.Brushes.TextBox.Focused.Background}" />
+            </Trigger>
+            <Trigger Property="IsHighlighted" Value="True">
+              <Setter Property="BorderBrush" TargetName="PART_TextBox" Value="{StaticResource Macad.Brushes.TextBox.MouseOver.Background}" />
+            </Trigger>
+            <Trigger Property="EvaluationError" Value="True">
+              <Setter Property="Background" TargetName="PART_TextBox" Value="{StaticResource Macad.Brushes.TextBox.Invalid.Background}" />
+            </Trigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="Left">
+              <Setter TargetName="PART_TextBox" Property="CornerRadius" Value="2,0,0,2" />
+              <Setter TargetName="PART_TextBox" Property="BorderThickness" Value="1" />
+            </Trigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="HCenter">
+              <Setter TargetName="PART_TextBox" Property="CornerRadius" Value="0" />
+              <Setter TargetName="PART_TextBox" Property="BorderThickness" Value="0,1,1,1" />
+            </Trigger>
+            <Trigger Property="mmp:GroupControls.Position" Value="Right">
+              <Setter TargetName="PART_TextBox" Property="CornerRadius" Value="0,2,2,0" />
+              <Setter TargetName="PART_TextBox" Property="BorderThickness" Value="0,1,1,1" />
+            </Trigger>
+            <Trigger Property="IncDecButtons" Value="True">
+              <Setter TargetName="IncButton" Property="Visibility" Value="Visible" />
+              <Setter TargetName="DecButton" Property="Visibility" Value="Visible" />
+              <Setter Property="mmp:GroupControls.Position" Value="HCenter" />
+              <Setter Property="HorizontalContentAlignment" Value="Center" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--endregion-->
+  <!--region Styles\PropertyPanelStyles.xaml-->
+  <Style x:Key="Macad.Styles.TextBlock.Property" TargetType="{x:Type TextBlock}">
+    <Setter Property="TextWrapping" Value="NoWrap" />
+    <Setter Property="TextTrimming" Value="None" />
+    <!--<Setter Property="FontWeight" Value="SemiBold"/>-->
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="Margin" Value="5,0,5,0" />
+    <Setter Property="Foreground" Value="{StaticResource Macad.Brushes.Text}" />
+  </Style>
+  <Style x:Key="Macad.Styles.TextBlock.PropertyLine" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource Macad.Styles.TextBlock.Property}">
+    <Setter Property="Margin" Value="10,0,0,0" />
+  </Style>
+  <Style x:Key="Macad.Styles.PropertyPanelStyle" TargetType="{x:Type UserControl}">
+    <Setter Property="TextOptions.TextFormattingMode" Value="Display" />
+    <Setter Property="TextOptions.TextRenderingMode" Value="ClearType" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="Width" Value="240" />
+    <Setter Property="Height" Value="Auto" />
+  </Style>
+  <!--endregion-->
+  <!--region Styles\StylesSource.xaml-->
+  <!--endregion-->
+</ResourceDictionary>

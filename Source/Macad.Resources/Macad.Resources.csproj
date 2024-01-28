@@ -3,6 +3,8 @@
     <ProjectGuid>{7D720461-7B59-43BE-A1D8-57915A296F9E}</ProjectGuid>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <EnableDefaultPageItems>false</EnableDefaultPageItems>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+	  <UseRidGraph>true</UseRidGraph>
   </PropertyGroup>
   
   <ItemGroup>
@@ -32,6 +34,10 @@
   <ItemGroup>
     <InternalsVisibleTo Include="Test.Unit" />
     <InternalsVisibleTo Include="Test.Memory" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="8.0.1" />
   </ItemGroup>
 
   <!-- Import the custom build targets -->

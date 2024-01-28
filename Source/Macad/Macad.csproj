@@ -7,17 +7,11 @@
     <Platforms>x64</Platforms>
     <StartupObject>Macad.Window.App</StartupObject>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
+	<UseRidGraph>true</UseRidGraph>
   </PropertyGroup>
   
-  <Import Project="$(MMBuildPropsDir)\Macad.Publish.props" />
-
-  <ItemGroup>
-    <PackageReference Include="ControlzEx" Version="6.0.0" />
-    <PackageReference Include="Dirkster.AvalonDock" Version="4.72.1" />
-    <PackageReference Include="Dirkster.AvalonDock.Themes.VS2013" Version="4.72.1" />
-    <PackageReference Include="Fluent.Ribbon" Version="10.0.4" />
-    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
-  </ItemGroup>
+  <!--<Import Project="$(MMBuildPropsDir)\Macad.Publish.props" />-->
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -30,15 +24,13 @@
     <ProjectReference Include="..\Macad.Core\Macad.Core.csproj" />
     <ProjectReference Include="..\Macad.Exchange\Macad.Exchange.csproj" />
     <ProjectReference Include="..\Macad.Interaction\Macad.Interaction.csproj" />
-    <ProjectReference Include="..\Macad.Managed\Macad.Managed.vcxproj" />
-    <ProjectReference Include="..\Macad.Occt\Macad.Occt.vcxproj" />
     <ProjectReference Include="..\Macad.Presentation\Macad.Presentation.csproj" />
     <ProjectReference Include="..\Macad.Resources\Macad.Resources.csproj" />
   </ItemGroup>
-  <ItemGroup>
+  <!--<ItemGroup>
     <InternalsVisibleTo Include="Test.Unit" />
     <InternalsVisibleTo Include="Test.Memory" />
-  </ItemGroup>
+  </ItemGroup>-->
   <ItemGroup>
     <SplashScreen Include="Properties\SplashScreen.png" />
   </ItemGroup>

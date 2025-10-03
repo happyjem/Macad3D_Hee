@@ -59,4 +59,7 @@
       <Filter>Std</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(MSBuildThisFileDirectory)Macad.VersionInfo.rc" />
+  </ItemGroup>
 </Project>

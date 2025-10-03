@@ -31,7 +31,7 @@ public class GenerateForwardDeclarationsPass : Pass
         base.Process();
 
         _Writer.Outdent();
-        foreach (var ns in namespaceList.Reverse())
+        foreach (var ns in System.Linq.Enumerable.Reverse(namespaceList))
         {
             _Writer.WriteLine($"}}; // namespace {ns}");
         }

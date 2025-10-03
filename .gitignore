@@ -1,3 +1,35 @@
 /.intermediate
 /bin
 /Data/UnitTests/Temp
+
+# Visual Studio cache
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+[xX]64/
+[xX]86/
+
+# VS cache files
+*.VC.db
+*.opendb
+
+# Rider / ReSharper
+.idea/
+*.sln.iml
+_ReSharper*/
+*.DotSettings.user
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg

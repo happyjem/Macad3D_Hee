@@ -114,7 +114,7 @@ public class GenerateSourceCodePass : Pass
         _Body.WriteLine();
 
         // Generate namespaces
-        foreach (var ns in _NamespaceList)
+        foreach (var ns in Enumerable.Reverse(_NamespaceList))
         {
             _Header.WriteLine("namespace " + ns);
             _Header.WriteLine("{");
@@ -140,7 +140,7 @@ public class GenerateSourceCodePass : Pass
         }
 
         // Tail code
-        foreach (var ns in _NamespaceList.Reverse())
+        foreach (var ns in Enumerable.Reverse(_NamespaceList))
         {
             _Header.WriteLine("}; // namespace " + ns);
         }

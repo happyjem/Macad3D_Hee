@@ -17,6 +17,8 @@
     <ProjectReference Include="..\..\Tools\BuildTools\BuildTools.csproj"> 
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
+      <Private>false</Private>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
 
     <!-- Add outfile to compiler -->

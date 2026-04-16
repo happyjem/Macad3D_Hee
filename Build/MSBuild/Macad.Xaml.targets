@@ -27,6 +27,7 @@
     <ProjectReference Include="..\..\Tools\BuildTools\BuildTools.csproj"> 
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
 
